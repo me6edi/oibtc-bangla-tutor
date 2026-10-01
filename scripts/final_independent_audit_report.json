@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "total_executed": 190,
+    "total_passed": 190,
+    "total_failed": 0,
+    "overall_accuracy_pct": 100.0,
+    "latency_ms": {
+      "min": 0.0,
+      "avg": 9.398046603872755,
+      "max": 30.697345733642578
+    }
+  },
+  "category_metrics": {
+    "dataset_coverage": {
+      "total": 57,
+      "passed": 57,
+      "failed": 0,
+      "cases": []
+    },
+    "answer_granularity": {
+      "total": 23,
+      "passed": 23,
+      "failed": 0,
+      "cases": []
+    },
+    "scope_hallucination": {
+      "total": 21,
+      "passed": 21,
+      "failed": 0,
+      "cases": []
+    },
+    "banglish_typo": {
+      "total": 15,
+      "passed": 15,
+      "failed": 0,
+      "cases": []
+    },
+    "contextual_multiturn": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "cases": []
+    },
+    "benchmark_67": {
+      "total": 67,
+      "passed": 67,
+      "failed": 0,
+      "accuracy": 100.0
+    },
+    "api_integration": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "cases": []
+    }
+  }
+}

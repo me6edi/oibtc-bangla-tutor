@@ -1,0 +1,12 @@
+{
+  "total": 31,
+  "passed": 31,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "latency_ms": {
+    "min": 0.05,
+    "avg": 5.41,
+    "max": 16.99
+  },
+  "failures": []
+}

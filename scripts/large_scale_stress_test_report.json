@@ -1,0 +1,1879 @@
+{
+  "summary": {
+    "total_tested": 67,
+    "total_passed": 67,
+    "total_failed": 0,
+    "overall_accuracy_pct": 100.0,
+    "category_breakdown": {
+      "Direct Bangla": {
+        "total": 18,
+        "passed": 18,
+        "failed": 0
+      },
+      "Out-of-Scope": {
+        "total": 7,
+        "passed": 7,
+        "failed": 0
+      },
+      "Hallucination": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      },
+      "Typo": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0
+      },
+      "Multi-intent": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      },
+      "Mixed Script": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0
+      },
+      "Context": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0
+      },
+      "Paraphrase": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0
+      },
+      "False Premise": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      },
+      "Banglish": {
+        "total": 10,
+        "passed": 10,
+        "failed": 0
+      },
+      "Scope Leakage": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      },
+      "Chapter Isolation": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0
+      }
+    },
+    "failure_breakdown": {
+      "DATASET_FAILURE": 0,
+      "CHUNKING_FAILURE": 0,
+      "RETRIEVAL_FAILURE": 0,
+      "INTENT_FAILURE": 0,
+      "CONTEXT_FAILURE": 0,
+      "GENERATION_FAILURE": 0,
+      "SCOPE_FAILURE": 0,
+      "HALLUCINATION_FAILURE": 0
+    }
+  },
+  "detailed_results": [
+    {
+      "Test ID": "A_DIR_01",
+      "Category": "Direct Bangla",
+      "Chapter": 1,
+      "Topic": "কৃত্রিম বুদ্ধিমত্তা (AI)",
+      "Source": "একুশ শতকে কৃত্রিম বুদ্ধিমত্তা (AI) ও আধুনিক মানবসম্পদ",
+      "Query": "কৃত্রিম বুদ্ধিমত্তা বা AI কাকে বলে?",
+      "Resolved Query": "কৃত্রিম বুদ্ধিমত্তা বা কৃত্রিম বুদ্ধিমত্তা কাকে বলে?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "একুশ শতকে কৃত্রিম বুদ্ধিমত্তা (AI) ও আধুনিক মানবসম্পদ"
+      ],
+      "Expected Evidence": [
+        "মানুষের মতো",
+        "চিন্তাভাবনা",
+        "বুদ্ধি"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, মানুষের চিন্তাশক্তি ও বুদ্ধি মানুষের মতো যন্ত্রের ভেতর রূপ দেওয়াকে কৃত্রিম বুদ্ধিমত্তা বা Artificial Intelligence (AI) বলা হয়। কম্পিউটার মানুষের নির্দেশ ছাড়া নিজে ভাবতে পারে না, কিন্তু কৃত্রিম বুদ্ধিমত্তা ব্যবহার করে মানুষের মতো চিন্তাভাবনা ও সিদ্ধান্ত নিতে পারে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 15.34
+    },
+    {
+      "Test ID": "A_DIR_02",
+      "Category": "Direct Bangla",
+      "Chapter": 1,
+      "Topic": "ই-লার্নিং ও বাংলাদেশ",
+      "Source": "ই-লার্নিং ও বাংলাদেশ",
+      "Query": "ই-লার্নিং কী?",
+      "Resolved Query": "ই-লার্নিং কী?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "ই-লার্নিং ও বাংলাদেশ"
+      ],
+      "Expected Evidence": [
+        "দূরশিক্ষণ",
+        "ইলেকট্রনিক"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, ই-লার্নিং (ইলেকট্রনিক লার্নিং বা দূরশিক্ষণ) বলতে আধুনিক তথ্য ও যোগাযোগ প্রযুক্তি ব্যবহার করে দূরদূরান্ত থেকে শিক্ষা গ্রহণের প্রক্রিয়াকে বোঝায়। এটি সরাসরি ক্লাসরুমের বিকল্প নয়, বরং ক্লাসরুম শিক্ষার একটি শক্তিশালী পরিপূরক।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 8.74
+    },
+    {
+      "Test ID": "A_DIR_03",
+      "Category": "Direct Bangla",
+      "Chapter": 1,
+      "Topic": "ই-সার্ভিস ও নাগরিক সেবা",
+      "Source": "ই-সার্ভিস ও নাগরিক সেবা - ই-পুর্জি, ইএমটিএস ও ই-পর্চা",
+      "Query": "ই-পুর্জি কী?",
+      "Resolved Query": "ই-পুর্জি কী?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "ই-সার্ভিস ও নাগরিক সেবা - ই-পুর্জি, ইএমটিএস ও ই-পর্চা"
+      ],
+      "Expected Evidence": [
+        "আখ",
+        "চিনি",
+        "এসএমএস"
+      ],
+      "Generated Answer": "**উত্তর: আখ চাষিদের ডিজিটাল অনুমতিপত্র।**\n\n**সংক্ষিপ্ত তথ্য:** চিনি কলগুলোতে আখ চাষিদের আখের সরবরাহ ও বিক্রির তথ্য এসএমএসের মাধ্যমে দ্রুত পাঠানোর ডিজিটাল অনুমতিপত্রকে ই-পুর্জি বলে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 10.0
+    },
+    {
+      "Test ID": "A_DIR_04",
+      "Category": "Direct Bangla",
+      "Chapter": 1,
+      "Topic": "ই-সার্ভিস ও নাগরিক সেবা",
+      "Source": "ই-সার্ভিস ও নাগরিক সেবা - ই-পুর্জি, ইএমটিএস ও ই-পর্চা",
+      "Query": "ইএমটিএস (EMTS) কী এবং এর সুবিধা কী?",
+      "Resolved Query": "ইএমটিএস (ইএমটিএস) কী এবং এর সুবিধা কী?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "ই-সার্ভিস ও নাগরিক সেবা - ই-পুর্জি, ইএমটিএস ও ই-পর্চা",
+        "ই-গভর্ন্যান্স ও বাংলাদেশ"
+      ],
+      "Expected Evidence": [
+        "ডাক বিভাগ",
+        "১ মিনিট",
+        "টাকা"
+      ],
+      "Generated Answer": "ই-সার্ভিস বা ই-সেবা হলো ডিজিটাল মাধ্যমে নাগরিক সেবা পৌঁছে দেওয়ার ব্যবস্থা। ই-সেবার মূল বৈশিষ্ট্য: স্বল্প খরচে, স্বল্প সময়ে এবং হয়রানিমুক্ত সেবা নিশ্চিত করা। প্রধান কয়েকটি ই-সেবা: ১. ই-পুর্জি: দেশের ১৫টি চিনিকলের সকল আখচাষি এখন এসএমএসের মাধ্যমে তাত্ক্ষণিকভাবে পুর্জি (আখ সরবরাহের অনুমতিপত্র) পাচ্ছে। ২. ইলেকট্রনিক মানি ট্রান্সফার সিস্টেম (ই-এমটিএস): বাংলাদেশ ডাক বিভাগের মাধ্যমে দেশের এক প্রান্ত থেকে অন্য প্রান্তে মাত্র ১ মিনিটে ৫০ হাজার টাকা পর্যন্ত নিরাপদে পাঠানো যায়। ৩. ই-পর্চা সেবা: জমিজমার খতিয়ান বা রেকর্ডের অনুলিপি দেশ-বিদেশের যেকোনো স্থান থেকে অনলাইনে নির্দিষ্ট ফি দিয়ে সংগ্রহ করা যায়। ৪. ই-স্বাস্থ্যসেবা ও টেলিমেডিসিন: মোবাইল ও ইন্টারনেটের মাধ্যমে বিশেষজ্ঞ চিকিৎসকের পরামর্শ নেওয়া যায়। ৫. রেলওয়ের ই-টিকিটিং: ঘরে বসে ট্রেনের টিকিট কাটা ও ভাড়া পরিশোধ করা যায়।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 14.74
+    },
+    {
+      "Test ID": "A_DIR_05",
+      "Category": "Direct Bangla",
+      "Chapter": 1,
+      "Topic": "লিপফ্রগ প্রযুক্তি",
+      "Source": "বিনোদন ও আইসিটি - ডিজিটাল মিডিয়া, গেমিং ও লিপফ্রগ প্রযুক্তি",
+      "Query": "লিপফ্রগ প্রযুক্তি কাকে বলে?",
+      "Resolved Query": "লিপফ্রগ প্রযুক্তি কাকে বলে?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "বিনোদন ও আইসিটি - ডিজিটাল মিডিয়া, গেমিং ও লিপফ্রগ প্রযুক্তি",
+        "একুশ শতকে কৃত্রিম বুদ্ধিমত্তা (AI) ও আধুনিক মানবসম্পদ"
+      ],
+      "Expected Evidence": [
+        "মধ্যবর্তী",
+        "লাফ",
+        "সর্বাধুনিক"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, লিপফ্রগ (Leapfrog) প্রযুক্তি বলতে বোঝায় প্রযুক্তির কোনো মধ্যবর্তী স্তর বা ধাপ অতিক্রম করে এক লাফে সরাসরি সর্বাধুনিক প্রযুক্তিতে উত্তরণ। যেমন বাংলাদেশ সনাতন তারযুক্ত ফোনের ধাপ পেরিয়ে সরাসরি মোবাইল ও সাবমেরিন কেবল প্রযুক্তিতে প্রবেশ করেছে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 8.6
+    },
+    {
+      "Test ID": "A_DIR_06",
+      "Category": "Direct Bangla",
+      "Chapter": 2,
+      "Topic": "কম্পিউটার ভাইরাস",
+      "Source": "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+      "Query": "কম্পিউটার ভাইরাস কী?",
+      "Resolved Query": "কম্পিউটার ভাইরাস কী?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+        "কম্পিউটার ভাইরাস ও ম্যালওয়্যার - নামকরণ ও ভাইরাসের ইতিহাস"
+      ],
+      "Expected Evidence": [
+        "ক্ষতিকর প্রোগ্রাম",
+        "Vital Information Resources Under Siege"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, কম্পিউটার ভাইরাস (VIRUS - Vital Information Resources Under Siege) হলো এক ধরনের ক্ষতিকর প্রোগ্রাম যা ব্যবহারকারীর অনুমতি ছাড়াই কম্পিউটারে প্রবেশ করে এবং স্বয়ংক্রিয়ভাবে নিজের প্রতিরূপ (Replicate) সৃষ্টি করে ফাইল ও সিস্টেম নষ্ট করে দেয়। প্রখ্যাত গবেষক ফ্রেড কোহেন (Fred Cohen) ১৯৮৩ সালে প্রথম ভাইরাসের আনুষ্ঠানিক নামকরণ করেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 10.0
+    },
+    {
+      "Test ID": "A_DIR_07",
+      "Category": "Direct Bangla",
+      "Chapter": 2,
+      "Topic": "টু-ফ্যাক্টর অথেনটিকেশন",
+      "Source": "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা",
+      "Query": "টু-ফ্যাক্টর অথেনটিকেশন বা 2FA বলতে কী বোঝায়?",
+      "Resolved Query": "টু-ফ্যাক্টর অথেনটিকেশন বা টু-ফ্যাক্টর অথেনটিকেশন বলতে কী বোঝায়?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা"
+      ],
+      "Expected Evidence": [
+        "পাসওয়ার্ড",
+        "ওটিপি",
+        "নিরাপত্তা"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, টু-ফ্যাক্টর অথেনটিকেশন (2FA) হলো ব্যবহারকারীর অ্যাকাউন্টের নিরাপত্তা নিশ্চিত করতে সাধারণ পাসওয়ার্ডের পাশাপাশি দ্বিতীয় একটি যাচাইকরণ স্তর (যেমন: মোবাইলে পাঠানো ওটিপি কোড বা বায়োমেট্রিক আঙুলের ছাপ) ব্যবহারের দ্বি-স্তরবিশিষ্ট নিরাপত্তা পদ্ধতি।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 13.69
+    },
+    {
+      "Test ID": "A_DIR_08",
+      "Category": "Direct Bangla",
+      "Chapter": 2,
+      "Topic": "সিএমওএস ব্যাটারি",
+      "Source": "ট্রাবলশুটিং সমস্যা ১ থেকে ৪ - পাওয়ার, মনিটর ডিসপ্লে, অতিরিক্ত তাপ ও সিএমওএস ব্যাটারি",
+      "Query": "মাদারবোর্ডে সিএমওএস (CMOS) ব্যাটারির কাজ কী?",
+      "Resolved Query": "মাদারবোর্ডে সিএমওএস (সিএমওএস) ব্যাটারির কাজ কী?",
+      "Expected Intent": "TROUBLESHOOTING",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "ট্রাবলশুটিং সমস্যা ১ থেকে ৪ - পাওয়ার, মনিটর ডিসপ্লে, অতিরিক্ত তাপ ও সিএমওএস ব্যাটারি",
+        "ট্রাবলশুটিং সমস্যা ১ থেকে ৪ - পাওয়ার, মনিটর ডিসপ্লে, অতিরিক্ত তাপ ও সিএমওএস ব্যাটারি"
+      ],
+      "Expected Evidence": [
+        "তারিখ",
+        "সময়",
+        "ব্যাটারি"
+      ],
+      "Generated Answer": "৪. সিস্টেমের তারিখ ও সময় বারবার ভুল দেখানো: মাদারবোর্ডের সিএমওএস (CMOS) ব্যাটারির চার্জ শেষ হয়ে গেলে এমন হয়; নতুন সিএমওএস ব্যাটারি প্রতিস্থাপন করতে হবে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 12.55
+    },
+    {
+      "Test ID": "A_DIR_09",
+      "Category": "Direct Bangla",
+      "Chapter": 2,
+      "Topic": "সফটওয়্যার পাইরেসি",
+      "Source": "কপিরাইট আইন ও সফটওয়্যার পাইরেসি",
+      "Query": "সফটওয়্যার পাইরেসি কাকে বলে?",
+      "Resolved Query": "সফটওয়্যার পাইরেসি কাকে বলে?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "কপিরাইট আইন ও সফটওয়্যার পাইরেসি",
+        "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার"
+      ],
+      "Expected Evidence": [
+        "অনুমতি ব্যতীত",
+        "অনুলিপি",
+        "পাইরেসি"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, প্রস্তুতকারীর অনুমতি ব্যতীত কোনো কপিরাইটকৃত সফটওয়্যার অনুলিপি করা, বিক্রি করা বা বাণিজ্যিকভাবে ব্যবহার করাকে সফটওয়্যার পাইরেসি বলা হয়।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 10.03
+    },
+    {
+      "Test ID": "A_DIR_10",
+      "Category": "Direct Bangla",
+      "Chapter": 2,
+      "Topic": "নার্সিসিজম",
+      "Source": "ডিজিটাল আসক্তি ও নার্সিসিজম",
+      "Query": "নার্সিসিজম কী?",
+      "Resolved Query": "নার্সিসিজম কী?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "ডিজিটাল আসক্তি ও নার্সিসিজম"
+      ],
+      "Expected Evidence": [
+        "আত্মপ্রেম",
+        "লাইক",
+        "নিজেকে"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, সামাজিক মাধ্যমে নিজেকে আকর্ষণীয়ভাবে উপস্থাপন করে অতিরিক্ত লাইক ও কমেন্ট পাওয়ার প্রবল মানসিক প্রবণতা বা আত্মপ্রেমকে নার্সিসিজম বলা হয়।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 9.94
+    },
+    {
+      "Test ID": "A_DIR_11",
+      "Category": "Direct Bangla",
+      "Chapter": 1,
+      "Topic": "ডিজিটাল বাংলাদেশ",
+      "Source": "আইসিটি সূচক, ডিজিটাল বাংলাদেশ ও বঙ্গবন্ধু স্যাটেলাইট-১",
+      "Query": "ডিজিটাল বাংলাদেশ রূপকল্পের ৪টি স্তম্ভ কী কী?",
+      "Resolved Query": "ডিজিটাল বাংলাদেশ রূপকল্পের ৪টি স্তম্ভ কী কী?",
+      "Expected Intent": "RULES",
+      "Detected Intent": "RULES",
+      "Retrieved Chunk(s)": [
+        "আইসিটি সূচক, ডিজিটাল বাংলাদেশ ও বঙ্গবন্ধু স্যাটেলাইট-১",
+        "ডিজিটাল আসক্তি থেকে মুক্ত থাকার উপায়"
+      ],
+      "Expected Evidence": [
+        "মানবসম্পদ উন্নয়ন",
+        "নাগরিক সংযোগ",
+        "ডিজিটাল সরকার",
+        "তথ্যপ্রযুক্তি শিল্প"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী ডিজিটাল বাংলাদেশ রূপকল্প বাস্তবায়নের ৪টি প্রধান স্তম্ভ:\n১. মানবসম্পদ উন্নয়ন (Human Resource Development)।\n২. নাগরিক সংযোগ (Connecting Citizens)।\n৩. ডিজিটাল সরকার বা ই-গভর্ন্যান্স (Digital Government)।\n৪. তথ্যপ্রযুক্তি শিল্প বা আইসিটি শিল্প (ICT Industry)।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 8.27
+    },
+    {
+      "Test ID": "A_DIR_12",
+      "Category": "Direct Bangla",
+      "Chapter": 2,
+      "Topic": "পাসওয়ার্ড তৈরির নিয়ম",
+      "Source": "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+      "Query": "শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম কী কী?",
+      "Resolved Query": "শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম কী কী?",
+      "Expected Intent": "RULES",
+      "Detected Intent": "RULES",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+        "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা"
+      ],
+      "Expected Evidence": [
+        "বড় হাতের",
+        "ছোট হাতের",
+        "সংখ্যা",
+        "চিহ্ন",
+        "দৈর্ঘ্য"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী একটি শক্তিশালী ও সুরক্ষিত পাসওয়ার্ড তৈরির প্রধান ৫টি নিয়ম ও নিয়মাবলি:\n১. পাসওয়ার্ডে বড় হাতের অক্ষর (A-Z) এবং ছোট হাতের অক্ষর (a-z) মিশ্রিত থাকতে হবে।\n২. অন্তত কয়েকটি সংখ্যা (0-9) ব্যবহার করতে হবে।\n৩. বিশেষ চিহ্ন বা স্পেশাল ক্যারেক্টার (যেমন: @, #, $, %, !) থাকতে হবে।\n৪. পাসওয়ার্ডের দৈর্ঘ্য অন্তত ৮ থেকে ১৬ অক্ষরের হওয়া নিরাপদ।\n৫. ব্যক্তিগত তথ্য পরিহার করা এবং নিয়মিত পরিবর্তন বা নিয়মিত বিরতিতে পরিবর্তন করা।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 5.88
+    },
+    {
+      "Test ID": "A_DIR_13",
+      "Category": "Direct Bangla",
+      "Chapter": 2,
+      "Topic": "রান কমান্ড",
+      "Source": "রেজিস্ট্রি ক্লিনিং ও অপ্রয়োজনীয় ফাইল অপসারণ (Run Commands)",
+      "Query": "অপ্রয়োজনীয় ক্যাশ ফাইল পরিষ্কারের ৩টি রান কমান্ড কী কী?",
+      "Resolved Query": "অপ্রয়োজনীয় ক্যাশ ফাইল পরিষ্কারের ৩টি রান কমান্ড কী কী?",
+      "Expected Intent": "RULES",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "রেজিস্ট্রি ক্লিনিং ও অপ্রয়োজনীয় ফাইল অপসারণ (Run Commands)",
+        "কম্পিউটার ভাইরাস সংক্রমণের লক্ষণসমূহ"
+      ],
+      "Expected Evidence": [
+        "temp",
+        "%temp%",
+        "prefetch"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, কম্পিউটারে জমা হওয়া ক্যাশ ও অপ্রয়োজনীয় অস্থায়ী (Temporary) ফাইল ডিলিট করার রান কমান্ডগুলো হলো:\n১. temp — এটি লিখে এন্টার দিলে অস্থায়ী ফাইল ফোল্ডার খোলে।\n২. %temp% — ব্যবহারকারীর লোকাল টেম্পোরারি ফাইলগুলো মুছে ফেলার জন্য।\n৩. prefetch — পুরোনো অপ্রয়োজনীয় ক্যাশ ফাইল দূর করার কমান্ড।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 10.79
+    },
+    {
+      "Test ID": "A_DIR_14",
+      "Category": "Direct Bangla",
+      "Chapter": 2,
+      "Topic": "ভাইরাস ছড়ানোর পদ্ধতি",
+      "Source": "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+      "Query": "কম্পিউটার ভাইরাস কীভাবে এক কম্পিউটার থেকে অন্য কম্পিউটারে ছড়ায়?",
+      "Resolved Query": "কম্পিউটার ভাইরাস কীভাবে এক কম্পিউটার থেকে অন্য কম্পিউটারে ছড়ায়?",
+      "Expected Intent": "MECHANISM",
+      "Detected Intent": "MECHANISM",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+        "কম্পিউটার ভাইরাস সংক্রমণের লক্ষণসমূহ"
+      ],
+      "Expected Evidence": [
+        "পেনড্রাইভ",
+        "ইন্টারনেট",
+        "ডাউনলোড"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, কম্পিউটার ভাইরাস যেভাবে এক কম্পিউটার থেকে অন্য কম্পিউটারে ছড়ায়:\n• সংক্রমিত পেনড্রাইভ, মেমোরি কার্ড বা সিডি কম্পিউটারে যুক্ত করলে।\n• ইন্টারনেট থেকে অনিরাপদ ফাইল, গান বা সফটওয়্যার ডাউনলোড করলে।\n• পাইরেটেড বা অননুমোদিত সফটওয়্যার ব্যবহারের মাধ্যমে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 6.43
+    },
+    {
+      "Test ID": "A_DIR_15",
+      "Category": "Direct Bangla",
+      "Chapter": 2,
+      "Topic": "ভাইরাস প্রতিরোধ",
+      "Source": "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+      "Query": "কম্পিউটারকে ভাইরাস থেকে কীভাবে মুক্ত রাখা যায়?",
+      "Resolved Query": "কম্পিউটারকে ভাইরাস থেকে কীভাবে মুক্ত রাখা যায়?",
+      "Expected Intent": "PREVENTION",
+      "Detected Intent": "GENERAL",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+        "কম্পিউটার ভাইরাস ও ম্যালওয়্যার - নামকরণ ও ভাইরাসের ইতিহাস"
+      ],
+      "Expected Evidence": [
+        "অ্যান্টিভাইরাস",
+        "আপডেট",
+        "স্ক্যান"
+      ],
+      "Generated Answer": "কম্পিউটারকে ভাইরাস থেকে মুক্ত ও সুরক্ষিত রাখার প্রধান উপায়: ১. নির্ভরযোগ্য ও বিশ্বস্ত অ্যান্টিভাইরাস সফটওয়্যার (যেমন: Avast, Avira, Kaspersky, Norton, ESET বা Windows Defender) ব্যবহার করা। ২. অ্যান্টিভাইরাস সফটওয়্যার সর্বদা নিয়মিত ইন্টারনেট থেকে আপডেট রাখা, যাতে নতুন আবিষ্কৃত ভাইরাস শনাক্ত ও নির্মূল করা যায়। ৩. অন্য কম্পিউটার থেকে আনা পেনড্রাইভ বা মেমোরি কার্ড ব্যবহারের পূর্বে অ্যান্টিভাইরাস দিয়ে স্ক্যান করে নেওয়া। ৪. অপরিচিত বা সন্দেহজনক ই-মেইল অ্যাটাচমেন্ট এবং পাইরেটেড সফটওয়্যার ব্যবহার থেকে বিরত থাকা।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 10.01
+    },
+    {
+      "Test ID": "A_DIR_16",
+      "Category": "Direct Bangla",
+      "Chapter": 2,
+      "Topic": "মেটালিক বডি শক",
+      "Source": "ট্রাবলশুটিং সমস্যা ৫ থেকে ৮ - ধীরগতি, মেটালিক বডি শক, হ্যাং/রিস্টার্ট ও উইন্ডোজ বুট সমস্যা",
+      "Query": "কম্পিউটারের মেটালিক বডিতে হাত দিলে বৈদ্যুতিক শক লাগে কেন?",
+      "Resolved Query": "কম্পিউটারের মেটালিক বডিতে হাত দিলে বৈদ্যুতিক শক লাগে কেন?",
+      "Expected Intent": "TROUBLESHOOTING",
+      "Detected Intent": "TROUBLESHOOTING",
+      "Retrieved Chunk(s)": [
+        "ট্রাবলশুটিং সমস্যা ৫ থেকে ৮ - ধীরগতি, মেটালিক বডি শক, হ্যাং/রিস্টার্ট ও উইন্ডোজ বুট সমস্যা",
+        "কম্পিউটার রক্ষণাবেক্ষণে সফটওয়্যারের গুরুত্ব"
+      ],
+      "Expected Evidence": [
+        "আর্থিং",
+        "গ্রাউন্ডিং",
+        "শক"
+      ],
+      "Generated Answer": "**উত্তর: কম্পিউটার পাওয়ার লাইনে সঠিক আর্থিং (Earthing) বা গ্রাউন্ডিং নিশ্চিত না থাকা।**\n\n**প্রাসঙ্গিক তথ্য:** কম্পিউটারের পাওয়ার লাইনে উপযুক্ত আর্থিং না থাকলে মেটালিক বডিতে বিদ্যুৎ সঞ্চালিত হয়ে হাত দিলে শক লাগে; অভিজ্ঞ ইলেকট্রিশিয়ান দিয়ে আর্থিং সংযোগ নিশ্চিত করা এর সমাধান।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 8.54
+    },
+    {
+      "Test ID": "A_DIR_17",
+      "Category": "Direct Bangla",
+      "Chapter": 2,
+      "Topic": "ডিস্ক ক্লিনআপ বনাম ডিফ্র্যাগমেন্টার",
+      "Source": "ডিস্ক ক্লিনআপ ও ডিস্ক ডিফ্র্যাগমেন্টার",
+      "Query": "ডিস্ক ক্লিনআপ ও ডিস্ক ডিফ্র্যাগমেন্টারের মধ্যে পার্থক্য কী?",
+      "Resolved Query": "ডিস্ক ক্লিনআপ ও ডিস্ক ডিফ্র্যাগমেন্টারের মধ্যে পার্থক্য কী?",
+      "Expected Intent": "GENERAL",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "ডিস্ক ক্লিনআপ ও ডিস্ক ডিফ্র্যাগমেন্টার",
+        "ট্রাবলশুটিং সমস্যা ১৩ থেকে ১৬ - ইন্টারনেট সংযোগ, অডিও, ইউএসবি ড্রাইভ ও প্রিন্টার সমস্যা"
+      ],
+      "Expected Evidence": [
+        "ডিস্ক ক্লিনআপ",
+        "ডিফ্র্যাগমেন্টার",
+        "অপ্রয়োজনীয় ফাইল"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী ডিস্ক ক্লিনআপ ও ডিস্ক ডিফ্র্যাগমেন্টার ব্যবহারের উদ্দেশ্য:\n১. ডিস্ক ক্লিনআপ (Disk Cleanup): হার্ডডিস্কের অপ্রয়োজনীয় ফাইল ও টেম্পোরারি ফাইলগুলো মুছে হার্ডডিস্কের ফাঁকা জায়গা বা স্পেস বৃদ্ধি করে।\n২. ডিস্ক ডিফ্র্যাগমেন্টার (Disk Defragmenter): হার্ডডিস্কের বিচ্ছিন্ন ফাইলগুলোকে পাশাপাশি সুবিন্যস্ত করে দ্রুত গতি নিশ্চিত করে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 8.64
+    },
+    {
+      "Test ID": "A_DIR_18",
+      "Category": "Direct Bangla",
+      "Chapter": 2,
+      "Topic": "আনইনস্টল বনাম ডিলিট",
+      "Source": "সফটওয়্যার আনইনস্টলেশন ও ডিলিট করার পার্থক্য (Software Uninstallation)",
+      "Query": "সফটওয়্যার ডিলিট করা এবং আনইনস্টল করার মধ্যে পার্থক্য কী?",
+      "Resolved Query": "সফটওয়্যার ডিলিট করা এবং আনইনস্টল করার মধ্যে পার্থক্য কী?",
+      "Expected Intent": "GENERAL",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "সফটওয়্যার আনইনস্টলেশন ও ডিলিট করার পার্থক্য (Software Uninstallation)",
+        "সফটওয়্যার ইনস্টলেশন পদ্ধতি (Software Installation)"
+      ],
+      "Expected Evidence": [
+        "রেজিস্ট্রি",
+        "ডিলিট",
+        "আনইনস্টল"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী সফটওয়্যার ডিলিট ও আনইনস্টল করার মধ্যে পার্থক্য:\n• সফটওয়্যার ডিলিট: শুধু ডেস্কটপের আইকন বা শর্টকাট মুছে ফেললে সফটওয়্যার ডিলিট হয় না এবং রেজিস্ট্রি অপরিবর্তিত থাকে।\n• সফটওয়্যার আনইনস্টল: কম্পিউটার থেকে সফটওয়্যার সম্পূর্ণ মুছে ফেলতে হলে কন্ট্রোল প্যানেল (Control Panel)-এর 'Programs and Features' এ গিয়ে 'Uninstall' করতে হয়।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 9.58
+    },
+    {
+      "Test ID": "B_BGL_01",
+      "Category": "Banglish",
+      "Chapter": 2,
+      "Topic": "পাসওয়ার্ড তৈরির নিয়ম",
+      "Source": "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+      "Query": "strong password bananor rules ki ki?",
+      "Resolved Query": "শক্তিশালী পাসওয়ার্ড বানানোর নিয়ম কী কী?",
+      "Expected Intent": "RULES",
+      "Detected Intent": "RULES",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+        "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা"
+      ],
+      "Expected Evidence": [
+        "বড় হাতের",
+        "সংখ্যা",
+        "চিহ্ন"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী একটি শক্তিশালী ও সুরক্ষিত পাসওয়ার্ড তৈরির প্রধান ৫টি নিয়ম ও নিয়মাবলি:\n১. পাসওয়ার্ডে বড় হাতের অক্ষর (A-Z) এবং ছোট হাতের অক্ষর (a-z) মিশ্রিত থাকতে হবে।\n২. অন্তত কয়েকটি সংখ্যা (0-9) ব্যবহার করতে হবে।\n৩. বিশেষ চিহ্ন বা স্পেশাল ক্যারেক্টার (যেমন: @, #, $, %, !) থাকতে হবে।\n৪. পাসওয়ার্ডের দৈর্ঘ্য অন্তত ৮ থেকে ১৬ অক্ষরের হওয়া নিরাপদ।\n৫. ব্যক্তিগত তথ্য পরিহার করা এবং নিয়মিত পরিবর্তন বা নিয়মিত বিরতিতে পরিবর্তন করা।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 11.19
+    },
+    {
+      "Test ID": "B_BGL_02",
+      "Category": "Banglish",
+      "Chapter": 2,
+      "Topic": "পাসওয়ার্ড কী",
+      "Source": "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+      "Query": "password ki?",
+      "Resolved Query": "পাসওয়ার্ড কী?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+        "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা"
+      ],
+      "Expected Evidence": [
+        "পাসওয়ার্ড",
+        "নিরাপত্তা"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, কম্পিউটার, ডেটা ও অনলাইন অ্যাকাউন্টের গোপনীয়তা ও নিরাপত্তা রক্ষার প্রধান ডিজিটাল সুরক্ষাব্যবস্থা বা ঢাল হলো পাসওয়ার্ড।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 13.93
+    },
+    {
+      "Test ID": "B_BGL_03",
+      "Category": "Banglish",
+      "Chapter": 2,
+      "Topic": "পাসওয়ার্ড শক্তিশালীকরণ",
+      "Source": "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+      "Query": "password kivabe strong korbo?",
+      "Resolved Query": "পাসওয়ার্ড কীভাবে strong করব?",
+      "Expected Intent": "RULES",
+      "Detected Intent": "GENERAL",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+        "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা"
+      ],
+      "Expected Evidence": [
+        "বড় হাতের",
+        "ছোট হাতের",
+        "সংখ্যা",
+        "চিহ্ন"
+      ],
+      "Generated Answer": "কম্পিউটার ও অনলাইন অ্যাকাউন্টের তথ্যের গোপনীয়তা রক্ষার প্রধান চাবিকাঠি হলো পাসওয়ার্ড। একটি সুরক্ষিত ও শক্তিশালী পাসওয়ার্ড তৈরির প্রধান ৫টি নিয়ম: ১. পাসওয়ার্ডে বড় হাতের অক্ষর (A-Z) এবং ছোট হাতের অক্ষরের (a-z) মিশ্রণ থাকতে হবে। ২. অন্তত কয়েকটি সংখ্যা (0-9) ব্যবহার করতে হবে। ৩. বিশেষ চিহ্ন বা স্পেশাল ক্যারেক্টার (যেমন: @, #, $, %, ! , *) ব্যবহার করতে হবে। ৪. পাসওয়ার্ডের দৈর্ঘ্য অন্তত ৮ থেকে ১৬ অক্ষরের হতে হবে। সহজে অনুমানযোগ্য কোনো শব্দ, নিজের নাম বা মোবাইল নম্বর পরিহার করতে হবে। ৫. নিয়মিত বিরতিতে পাসওয়ার্ড পরিবর্তন করতে হবে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 18.13
+    },
+    {
+      "Test ID": "B_BGL_04",
+      "Category": "Banglish",
+      "Chapter": 2,
+      "Topic": "কম্পিউটার ভাইরাস",
+      "Source": "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+      "Query": "computer virus ki?",
+      "Resolved Query": "কম্পিউটার ভাইরাস কী?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+        "কম্পিউটার ভাইরাস ও ম্যালওয়্যার - নামকরণ ও ভাইরাসের ইতিহাস"
+      ],
+      "Expected Evidence": [
+        "Vital Information Resources Under Siege",
+        "ক্ষতিকর প্রোগ্রাম"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, কম্পিউটার ভাইরাস (VIRUS - Vital Information Resources Under Siege) হলো এক ধরনের ক্ষতিকর প্রোগ্রাম যা ব্যবহারকারীর অনুমতি ছাড়াই কম্পিউটারে প্রবেশ করে এবং স্বয়ংক্রিয়ভাবে নিজের প্রতিরূপ (Replicate) সৃষ্টি করে ফাইল ও সিস্টেম নষ্ট করে দেয়। প্রখ্যাত গবেষক ফ্রেড কোহেন (Fred Cohen) ১৯৮৩ সালে প্রথম ভাইরাসের আনুষ্ঠানিক নামকরণ করেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 13.63
+    },
+    {
+      "Test ID": "B_BGL_05",
+      "Category": "Banglish",
+      "Chapter": 2,
+      "Topic": "ভাইরাস ছড়ানো",
+      "Source": "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+      "Query": "virus kivabe choray?",
+      "Resolved Query": "ভাইরাস কীভাবে ছড়ায়?",
+      "Expected Intent": "MECHANISM",
+      "Detected Intent": "MECHANISM",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+        "পাঠ্যবইয়ে উল্লেখিত উল্লেখযোগ্য ভাইরাস ও ম্যালওয়্যারের তালিকা"
+      ],
+      "Expected Evidence": [
+        "পেনড্রাইভ",
+        "ইন্টারনেট",
+        "ডাউনলোড"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, কম্পিউটার ভাইরাস যেভাবে এক কম্পিউটার থেকে অন্য কম্পিউটারে ছড়ায়:\n• সংক্রমিত পেনড্রাইভ, মেমোরি কার্ড বা সিডি কম্পিউটারে যুক্ত করলে।\n• ইন্টারনেট থেকে অনিরাপদ ফাইল, গান বা সফটওয়্যার ডাউনলোড করলে।\n• পাইরেটেড বা অননুমোদিত সফটওয়্যার ব্যবহারের মাধ্যমে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 11.05
+    },
+    {
+      "Test ID": "B_BGL_06",
+      "Category": "Banglish",
+      "Chapter": 2,
+      "Topic": "সফটওয়্যার আনইনস্টল",
+      "Source": "সফটওয়্যার আনইনস্টলেশন ও ডিলিট করার পার্থক্য (Software Uninstallation)",
+      "Query": "software uninstall kivabe korbo?",
+      "Resolved Query": "সফটওয়্যার আনইনস্টলেশন কীভাবে করব?",
+      "Expected Intent": "MECHANISM",
+      "Detected Intent": "GENERAL",
+      "Retrieved Chunk(s)": [
+        "সফটওয়্যার আনইনস্টলেশন ও ডিলিট করার পার্থক্য (Software Uninstallation)",
+        "সফটওয়্যার ইনস্টলেশন পদ্ধতি (Software Installation)"
+      ],
+      "Expected Evidence": [
+        "Control Panel",
+        "Programs and Features",
+        "Uninstall"
+      ],
+      "Generated Answer": "কোনো সফটওয়্যারের ডেস্কটপ শর্টকাট আইকন ডিলিট করলেই সফটওয়্যারটি কম্পিউটার থেকে মুছে যায় না। সফটওয়্যারকে পুরোপুরি অপসারণ করতে হলে আনইনস্টল (Uninstall) করতে হয়। উইন্ডোজে আনইনস্টল করার নিয়ম: Control Panel এ গিয়ে 'Programs and Features' এ প্রবেশ করতে হবে। এরপর প্রদর্শিত তালিকা থেকে যে সফটওয়্যারটি সরাতে হবে তা নির্বাচন করে মাউসের ডান বাটনে ক্লিক করে 'Uninstall' চাপতে হবে। এরপর অনস্ক্রিন নির্দেশনা মেনে সফটওয়্যারটি কম্পিউটার থেকে সম্পূর্ণ মুছে ফেলতে হয়।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 14.72
+    },
+    {
+      "Test ID": "B_BGL_07",
+      "Category": "Banglish",
+      "Chapter": 1,
+      "Topic": "ই-লার্নিং",
+      "Source": "ই-লার্নিং ও বাংলাদেশ",
+      "Query": "e-learning bolte ki bujhai?",
+      "Resolved Query": "ই-লার্নিং বলতে কী বোঝায়?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "ই-লার্নিং ও বাংলাদেশ"
+      ],
+      "Expected Evidence": [
+        "দূরশিক্ষণ",
+        "ইলেকট্রনিক"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, ই-লার্নিং (ইলেকট্রনিক লার্নিং বা দূরশিক্ষণ) বলতে আধুনিক তথ্য ও যোগাযোগ প্রযুক্তি ব্যবহার করে দূরদূরান্ত থেকে শিক্ষা গ্রহণের প্রক্রিয়াকে বোঝায়। এটি সরাসরি ক্লাসরুমের বিকল্প নয়, বরং ক্লাসরুম শিক্ষার একটি শক্তিশালী পরিপূরক।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 14.19
+    },
+    {
+      "Test ID": "B_BGL_08",
+      "Category": "Banglish",
+      "Chapter": 2,
+      "Topic": "ডিস্ক ডিফ্র্যাগমেন্টার",
+      "Source": "ডিস্ক ক্লিনআপ ও ডিস্ক ডিফ্র্যাগমেন্টার",
+      "Query": "disk defragmenter er kaj ki?",
+      "Resolved Query": "ডিস্ক ডিফ্র্যাগমেন্টার এর কাজ কী?",
+      "Expected Intent": "GENERAL",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "ডিস্ক ক্লিনআপ ও ডিস্ক ডিফ্র্যাগমেন্টার",
+        "ট্রাবলশুটিং সমস্যা ১৩ থেকে ১৬ - ইন্টারনেট সংযোগ, অডিও, ইউএসবি ড্রাইভ ও প্রিন্টার সমস্যা"
+      ],
+      "Expected Evidence": [
+        "ডিফ্র্যাগমেন্টার",
+        "পাশাপাশি"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী ডিস্ক ক্লিনআপ ও ডিস্ক ডিফ্র্যাগমেন্টার ব্যবহারের উদ্দেশ্য:\n১. ডিস্ক ক্লিনআপ (Disk Cleanup): হার্ডডিস্কের অপ্রয়োজনীয় ফাইল ও টেম্পোরারি ফাইলগুলো মুছে হার্ডডিস্কের ফাঁকা জায়গা বা স্পেস বৃদ্ধি করে।\n২. ডিস্ক ডিফ্র্যাগমেন্টার (Disk Defragmenter): হার্ডডিস্কের বিচ্ছিন্ন ফাইলগুলোকে পাশাপাশি সুবিন্যস্ত করে দ্রুত গতি নিশ্চিত করে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 14.91
+    },
+    {
+      "Test ID": "B_BGL_09",
+      "Category": "Banglish",
+      "Chapter": 2,
+      "Topic": "আর্থিং",
+      "Source": "ট্রাবলশুটিং সমস্যা ৫ থেকে ৮ - ধীরগতি, মেটালিক বডি শক, হ্যাং/রিস্টার্ট ও উইন্ডোজ বুট সমস্যা",
+      "Query": "earthing keno lage?",
+      "Resolved Query": "আর্থিং কেন লাগে?",
+      "Expected Intent": "TROUBLESHOOTING",
+      "Detected Intent": "TROUBLESHOOTING",
+      "Retrieved Chunk(s)": [
+        "ট্রাবলশুটিং সমস্যা ৫ থেকে ৮ - ধীরগতি, মেটালিক বডি শক, হ্যাং/রিস্টার্ট ও উইন্ডোজ বুট সমস্যা"
+      ],
+      "Expected Evidence": [
+        "আর্থিং",
+        "শক"
+      ],
+      "Generated Answer": "পাঠ্যবইয়ের ট্রাবলশুটিং নির্দেশিকা (সমস্যা ৬) অনুযায়ী কম্পিউটারের মেটালিক বডিতে হাত দিলে হালকা বিদ্যুৎ শক অনুভূত হলে:\n• কম্পিউটার লাইনে সঠিক আর্থিং (Earthing) করা নেই; অভিজ্ঞ ইলেকট্রিশিয়ান দিয়ে কম্পিউটার পাওয়ার লাইনে উপযুক্ত গ্রাউন্ডিং বা আর্থিং নিশ্চিত করতে হবে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 11.86
+    },
+    {
+      "Test ID": "B_BGL_10",
+      "Category": "Banglish",
+      "Chapter": 1,
+      "Topic": "ই-পুর্জি",
+      "Source": "ই-সার্ভিস ও নাগরিক সেবা - ই-পুর্জি, ইএমটিএস ও ই-পর্চা",
+      "Query": "e-purjee ki?",
+      "Resolved Query": "ই-পুর্জি কী?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "ই-সার্ভিস ও নাগরিক সেবা - ই-পুর্জি, ইএমটিএস ও ই-পর্চা"
+      ],
+      "Expected Evidence": [
+        "আখ",
+        "চিনি",
+        "এসএমএস"
+      ],
+      "Generated Answer": "**উত্তর: আখ চাষিদের ডিজিটাল অনুমতিপত্র।**\n\n**সংক্ষিপ্ত তথ্য:** চিনি কলগুলোতে আখ চাষিদের আখের সরবরাহ ও বিক্রির তথ্য এসএমএসের মাধ্যমে দ্রুত পাঠানোর ডিজিটাল অনুমতিপত্রকে ই-পুর্জি বলে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 14.35
+    },
+    {
+      "Test ID": "C_MIX_01",
+      "Category": "Mixed Script",
+      "Chapter": 2,
+      "Topic": "কম্পিউটার ভাইরাস",
+      "Source": "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+      "Query": "কম্পিউটার Virus কীভাবে ছড়ায়?",
+      "Resolved Query": "কম্পিউটার ভাইরাস কীভাবে ছড়ায়?",
+      "Expected Intent": "MECHANISM",
+      "Detected Intent": "MECHANISM",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+        "কম্পিউটার ভাইরাস ও ম্যালওয়্যার - নামকরণ ও ভাইরাসের ইতিহাস"
+      ],
+      "Expected Evidence": [
+        "পেনড্রাইভ",
+        "ইন্টারনেট",
+        "ডাউনলোড"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, কম্পিউটার ভাইরাস যেভাবে এক কম্পিউটার থেকে অন্য কম্পিউটারে ছড়ায়:\n• সংক্রমিত পেনড্রাইভ, মেমোরি কার্ড বা সিডি কম্পিউটারে যুক্ত করলে।\n• ইন্টারনেট থেকে অনিরাপদ ফাইল, গান বা সফটওয়্যার ডাউনলোড করলে।\n• পাইরেটেড বা অননুমোদিত সফটওয়্যার ব্যবহারের মাধ্যমে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 12.52
+    },
+    {
+      "Test ID": "C_MIX_02",
+      "Category": "Mixed Script",
+      "Chapter": 2,
+      "Topic": "পাসওয়ার্ড",
+      "Source": "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+      "Query": "Strong Password তৈরির নিয়ম কী?",
+      "Resolved Query": "শক্তিশালী পাসওয়ার্ড তৈরির নিয়ম কী?",
+      "Expected Intent": "RULES",
+      "Detected Intent": "RULES",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+        "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা"
+      ],
+      "Expected Evidence": [
+        "বড় হাতের",
+        "সংখ্যা",
+        "চিহ্ন"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী একটি শক্তিশালী ও সুরক্ষিত পাসওয়ার্ড তৈরির প্রধান ৫টি নিয়ম ও নিয়মাবলি:\n১. পাসওয়ার্ডে বড় হাতের অক্ষর (A-Z) এবং ছোট হাতের অক্ষর (a-z) মিশ্রিত থাকতে হবে।\n২. অন্তত কয়েকটি সংখ্যা (0-9) ব্যবহার করতে হবে।\n৩. বিশেষ চিহ্ন বা স্পেশাল ক্যারেক্টার (যেমন: @, #, $, %, !) থাকতে হবে।\n৪. পাসওয়ার্ডের দৈর্ঘ্য অন্তত ৮ থেকে ১৬ অক্ষরের হওয়া নিরাপদ।\n৫. ব্যক্তিগত তথ্য পরিহার করা এবং নিয়মিত পরিবর্তন বা নিয়মিত বিরতিতে পরিবর্তন করা।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 13.05
+    },
+    {
+      "Test ID": "C_MIX_03",
+      "Category": "Mixed Script",
+      "Chapter": 2,
+      "Topic": "টু-ফ্যাক্টর অথেনটিকেশন",
+      "Source": "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা",
+      "Query": "2FA বা Two Factor Authentication কী?",
+      "Resolved Query": "টু-ফ্যাক্টর অথেনটিকেশন বা টু-ফ্যাক্টর অথেনটিকেশন কী?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা"
+      ],
+      "Expected Evidence": [
+        "পাসওয়ার্ড",
+        "ওটিপি",
+        "নিরাপত্তা"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, টু-ফ্যাক্টর অথেনটিকেশন (2FA) হলো ব্যবহারকারীর অ্যাকাউন্টের নিরাপত্তা নিশ্চিত করতে সাধারণ পাসওয়ার্ডের পাশাপাশি দ্বিতীয় একটি যাচাইকরণ স্তর (যেমন: মোবাইলে পাঠানো ওটিপি কোড বা বায়োমেট্রিক আঙুলের ছাপ) ব্যবহারের দ্বি-স্তরবিশিষ্ট নিরাপত্তা পদ্ধতি।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 14.16
+    },
+    {
+      "Test ID": "C_MIX_04",
+      "Category": "Mixed Script",
+      "Chapter": 2,
+      "Topic": "ট্রাবলশুটিং",
+      "Source": "ট্রাবলশুটিং সমস্যা ৫ থেকে ৮ - ধীরগতি, মেটালিক বডি শক, হ্যাং/রিস্টার্ট ও উইন্ডোজ বুট সমস্যা",
+      "Query": "পিসিতে Earthing কেন প্রয়োজন?",
+      "Resolved Query": "পিসিতে আর্থিং কেন প্রয়োজন?",
+      "Expected Intent": "TROUBLESHOOTING",
+      "Detected Intent": "TROUBLESHOOTING",
+      "Retrieved Chunk(s)": [
+        "ট্রাবলশুটিং সমস্যা ৫ থেকে ৮ - ধীরগতি, মেটালিক বডি শক, হ্যাং/রিস্টার্ট ও উইন্ডোজ বুট সমস্যা",
+        "একুশ শতকে কৃত্রিম বুদ্ধিমত্তা (AI) ও আধুনিক মানবসম্পদ"
+      ],
+      "Expected Evidence": [
+        "আর্থিং",
+        "শক"
+      ],
+      "Generated Answer": "পাঠ্যবইয়ের ট্রাবলশুটিং নির্দেশিকা (সমস্যা ৬) অনুযায়ী কম্পিউটারের মেটালিক বডিতে হাত দিলে হালকা বিদ্যুৎ শক অনুভূত হলে:\n• কম্পিউটার লাইনে সঠিক আর্থিং (Earthing) করা নেই; অভিজ্ঞ ইলেকট্রিশিয়ান দিয়ে কম্পিউটার পাওয়ার লাইনে উপযুক্ত গ্রাউন্ডিং বা আর্থিং নিশ্চিত করতে হবে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 12.79
+    },
+    {
+      "Test ID": "C_MIX_05",
+      "Category": "Mixed Script",
+      "Chapter": 1,
+      "Topic": "কৃত্রিম বুদ্ধিমত্তা",
+      "Source": "একুশ শতকে কৃত্রিম বুদ্ধিমত্তা (AI) ও আধুনিক মানবসম্পদ",
+      "Query": "একুশ শতকে Artificial Intelligence বা AI এর ভূমিকা কী?",
+      "Resolved Query": "একুশ শতকে artificial intelligence বা কৃত্রিম বুদ্ধিমত্তা এর ভূমিকা কী?",
+      "Expected Intent": "GENERAL",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "একুশ শতকে কৃত্রিম বুদ্ধিমত্তা (AI) ও আধুনিক মানবসম্পদ",
+        "একুশ শতক এবং তথ্য ও যোগাযোগ প্রযুক্তি - জ্ঞানভিত্তিক অর্থনীতি ও দক্ষতা"
+      ],
+      "Expected Evidence": [
+        "কৃত্রিম বুদ্ধিমত্তা",
+        "মানুষের মতো",
+        "চিন্তাভাবনা"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, মানুষের চিন্তাশক্তি ও বুদ্ধি মানুষের মতো যন্ত্রের ভেতর রূপ দেওয়াকে কৃত্রিম বুদ্ধিমত্তা বা Artificial Intelligence (AI) বলা হয়। কম্পিউটার মানুষের নির্দেশ ছাড়া নিজে ভাবতে পারে না, কিন্তু কৃত্রিম বুদ্ধিমত্তা ব্যবহার করে মানুষের মতো চিন্তাভাবনা ও সিদ্ধান্ত নিতে পারে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 18.56
+    },
+    {
+      "Test ID": "D_TYP_01",
+      "Category": "Typo",
+      "Chapter": 2,
+      "Topic": "ভাইরাস লক্ষণ",
+      "Source": "কম্পিউটার ভাইরাস সংক্রমণের লক্ষণসমূহ",
+      "Query": "কমপিউটার ভাইরাসের লক্ষন গুলা কি কি?",
+      "Resolved Query": "কম্পিউটার ভাইরাসের লক্ষণ গুলা কি কি?",
+      "Expected Intent": "SYMPTOMS",
+      "Detected Intent": "SYMPTOMS",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার ভাইরাস সংক্রমণের লক্ষণসমূহ",
+        "কম্পিউটার ভাইরাস ও ম্যালওয়্যার - নামকরণ ও ভাইরাসের ইতিহাস"
+      ],
+      "Expected Evidence": [
+        "ধীর গতি",
+        "মেমোরি",
+        "রিস্টার্ট"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী কম্পিউটারে ভাইরাস আক্রমণ করলে নিম্নোক্ত লক্ষণগুলো দেখা দেয়:\n১. কম্পিউটার আগের চেয়ে অস্বাভাবিক ধীর গতি বা ধীরগতির হয়ে যায়।\n২. ফাইল ওপেন করতে স্বাভাবিকের চেয়ে অনেক বেশি সময় নেয় এবং মেমোরি অস্বাভাবিকভাবে কমে যায়।\n৩. অপ্রত্যাশিত বার্তা প্রদর্শন করে বা কম্পিউটার বারবার রিস্টার্ট বা হ্যাং হয়ে যায়।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 8.61
+    },
+    {
+      "Test ID": "D_TYP_02",
+      "Category": "Typo",
+      "Chapter": 2,
+      "Topic": "পাসওয়ার্ড",
+      "Source": "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+      "Query": "শক্তিসালী পাসয়ার্ড বানানোর ৫টি নিয়োম",
+      "Resolved Query": "শক্তিশালী পাসওয়ার্ড বানানোর ৫টি নিয়ম",
+      "Expected Intent": "RULES",
+      "Detected Intent": "RULES",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+        "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা"
+      ],
+      "Expected Evidence": [
+        "বড় হাতের",
+        "সংখ্যা",
+        "চিহ্ন"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী একটি শক্তিশালী ও সুরক্ষিত পাসওয়ার্ড তৈরির প্রধান ৫টি নিয়ম ও নিয়মাবলি:\n১. পাসওয়ার্ডে বড় হাতের অক্ষর (A-Z) এবং ছোট হাতের অক্ষর (a-z) মিশ্রিত থাকতে হবে।\n২. অন্তত কয়েকটি সংখ্যা (0-9) ব্যবহার করতে হবে।\n৩. বিশেষ চিহ্ন বা স্পেশাল ক্যারেক্টার (যেমন: @, #, $, %, !) থাকতে হবে।\n৪. পাসওয়ার্ডের দৈর্ঘ্য অন্তত ৮ থেকে ১৬ অক্ষরের হওয়া নিরাপদ।\n৫. ব্যক্তিগত তথ্য পরিহার করা এবং নিয়মিত পরিবর্তন বা নিয়মিত বিরতিতে পরিবর্তন করা।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 9.11
+    },
+    {
+      "Test ID": "D_TYP_03",
+      "Category": "Typo",
+      "Chapter": 2,
+      "Topic": "ডিফ্র্যাগমেন্টার",
+      "Source": "ডিস্ক ক্লিনআপ ও ডিস্ক ডিফ্র্যাগমেন্টার",
+      "Query": "ডিষ্ক ডিফ্রেগমেন্টার এর কাজ কি?",
+      "Resolved Query": "ডিস্ক ডিফ্র্যাগমেন্টার এর কাজ কি?",
+      "Expected Intent": "GENERAL",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "ডিস্ক ক্লিনআপ ও ডিস্ক ডিফ্র্যাগমেন্টার",
+        "ট্রাবলশুটিং সমস্যা ১৩ থেকে ১৬ - ইন্টারনেট সংযোগ, অডিও, ইউএসবি ড্রাইভ ও প্রিন্টার সমস্যা"
+      ],
+      "Expected Evidence": [
+        "ডিফ্র্যাগমেন্টার",
+        "পাশাপাশি"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী ডিস্ক ক্লিনআপ ও ডিস্ক ডিফ্র্যাগমেন্টার ব্যবহারের উদ্দেশ্য:\n১. ডিস্ক ক্লিনআপ (Disk Cleanup): হার্ডডিস্কের অপ্রয়োজনীয় ফাইল ও টেম্পোরারি ফাইলগুলো মুছে হার্ডডিস্কের ফাঁকা জায়গা বা স্পেস বৃদ্ধি করে।\n২. ডিস্ক ডিফ্র্যাগমেন্টার (Disk Defragmenter): হার্ডডিস্কের বিচ্ছিন্ন ফাইলগুলোকে পাশাপাশি সুবিন্যস্ত করে দ্রুত গতি নিশ্চিত করে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 9.07
+    },
+    {
+      "Test ID": "D_TYP_04",
+      "Category": "Typo",
+      "Chapter": 2,
+      "Topic": "সিএমওএস ব্যাটারি",
+      "Source": "ট্রাবলশুটিং সমস্যা ১ থেকে ৪ - পাওয়ার, মনিটর ডিসপ্লে, অতিরিক্ত তাপ ও সিএমওএস ব্যাটারি",
+      "Query": "মাদারবোর্ডের সিএমস বেটারি নষ্ট হলে কি হয়?",
+      "Resolved Query": "মাদারবোর্ডের সিএমওএস ব্যাটারি নষ্ট হলে কি হয়?",
+      "Expected Intent": "TROUBLESHOOTING",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "ট্রাবলশুটিং সমস্যা ১ থেকে ৪ - পাওয়ার, মনিটর ডিসপ্লে, অতিরিক্ত তাপ ও সিএমওএস ব্যাটারি",
+        "ট্রাবলশুটিং সমস্যা ১ থেকে ৪ - পাওয়ার, মনিটর ডিসপ্লে, অতিরিক্ত তাপ ও সিএমওএস ব্যাটারি"
+      ],
+      "Expected Evidence": [
+        "তারিখ",
+        "সময়",
+        "ব্যাটারি"
+      ],
+      "Generated Answer": "৪. সিস্টেমের তারিখ ও সময় বারবার ভুল দেখানো: মাদারবোর্ডের সিএমওএস (CMOS) ব্যাটারির চার্জ শেষ হয়ে গেলে এমন হয়; নতুন সিএমওএস ব্যাটারি প্রতিস্থাপন করতে হবে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 9.62
+    },
+    {
+      "Test ID": "E_PAR_01",
+      "Category": "Paraphrase",
+      "Chapter": 2,
+      "Topic": "পাসওয়ার্ড নিয়ম",
+      "Source": "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+      "Query": "পাসওয়ার্ড শক্তিশালী করার উপায়গুলো বল।",
+      "Resolved Query": "পাসওয়ার্ড শক্তিশালী করার উপায়গুলো বল।",
+      "Expected Intent": "RULES",
+      "Detected Intent": "GENERAL",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+        "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা"
+      ],
+      "Expected Evidence": [
+        "বড় হাতের",
+        "সংখ্যা",
+        "চিহ্ন"
+      ],
+      "Generated Answer": "কম্পিউটার ও অনলাইন অ্যাকাউন্টের তথ্যের গোপনীয়তা রক্ষার প্রধান চাবিকাঠি হলো পাসওয়ার্ড। একটি সুরক্ষিত ও শক্তিশালী পাসওয়ার্ড তৈরির প্রধান ৫টি নিয়ম: ১. পাসওয়ার্ডে বড় হাতের অক্ষর (A-Z) এবং ছোট হাতের অক্ষরের (a-z) মিশ্রণ থাকতে হবে। ২. অন্তত কয়েকটি সংখ্যা (0-9) ব্যবহার করতে হবে। ৩. বিশেষ চিহ্ন বা স্পেশাল ক্যারেক্টার (যেমন: @, #, $, %, ! , *) ব্যবহার করতে হবে। ৪. পাসওয়ার্ডের দৈর্ঘ্য অন্তত ৮ থেকে ১৬ অক্ষরের হতে হবে। সহজে অনুমানযোগ্য কোনো শব্দ, নিজের নাম বা মোবাইল নম্বর পরিহার করতে হবে। ৫. নিয়মিত বিরতিতে পাসওয়ার্ড পরিবর্তন করতে হবে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 9.64
+    },
+    {
+      "Test ID": "E_PAR_02",
+      "Category": "Paraphrase",
+      "Chapter": 2,
+      "Topic": "পাসওয়ার্ড নিয়ম",
+      "Source": "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+      "Query": "পাসওয়ার্ড তৈরির ৫টি শর্ত কী কী?",
+      "Resolved Query": "পাসওয়ার্ড তৈরির ৫টি শর্ত কী কী?",
+      "Expected Intent": "RULES",
+      "Detected Intent": "RULES",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+        "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা"
+      ],
+      "Expected Evidence": [
+        "বড় হাতের",
+        "সংখ্যা",
+        "চিহ্ন"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী একটি শক্তিশালী ও সুরক্ষিত পাসওয়ার্ড তৈরির প্রধান ৫টি নিয়ম ও নিয়মাবলি:\n১. পাসওয়ার্ডে বড় হাতের অক্ষর (A-Z) এবং ছোট হাতের অক্ষর (a-z) মিশ্রিত থাকতে হবে।\n২. অন্তত কয়েকটি সংখ্যা (0-9) ব্যবহার করতে হবে।\n৩. বিশেষ চিহ্ন বা স্পেশাল ক্যারেক্টার (যেমন: @, #, $, %, !) থাকতে হবে।\n৪. পাসওয়ার্ডের দৈর্ঘ্য অন্তত ৮ থেকে ১৬ অক্ষরের হওয়া নিরাপদ।\n৫. ব্যক্তিগত তথ্য পরিহার করা এবং নিয়মিত পরিবর্তন বা নিয়মিত বিরতিতে পরিবর্তন করা।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 8.66
+    },
+    {
+      "Test ID": "E_PAR_03",
+      "Category": "Paraphrase",
+      "Chapter": 2,
+      "Topic": "পাসওয়ার্ড নিরাপত্তা",
+      "Source": "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+      "Query": "একটি পাসওয়ার্ড কীভাবে নিরাপদ রাখা যায়?",
+      "Resolved Query": "একটি পাসওয়ার্ড কীভাবে নিরাপদ রাখা যায়?",
+      "Expected Intent": "PREVENTION",
+      "Detected Intent": "PREVENTION",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+        "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা"
+      ],
+      "Expected Evidence": [
+        "পাসওয়ার্ড",
+        "নিয়মিত পরিবর্তন"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী একটি পাসওয়ার্ড নিরাপদ রাখার প্রধান উপায়সমূহ:\n১. বড় ও ছোট হাতের অক্ষর, সংখ্যা এবং বিশেষ চিহ্নের সংমিশ্রণে তৈরি শক্তিশালী পাসওয়ার্ড ব্যবহার করা।\n২. ব্যক্তিগত তথ্য (যেমন নিজের নাম, মোবাইল নম্বর) পরিহার করা।\n৩. নির্দিষ্ট সময় পরপর নিয়মিত পরিবর্তন করা এবং পাসওয়ার্ড গোপন রাখা।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 6.03
+    },
+    {
+      "Test ID": "E_PAR_04",
+      "Category": "Paraphrase",
+      "Chapter": 2,
+      "Topic": "পাসওয়ার্ড নিয়ম (Banglish)",
+      "Source": "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+      "Query": "Strong password rules কি কি?",
+      "Resolved Query": "শক্তিশালী পাসওয়ার্ড নিয়ম কি কি?",
+      "Expected Intent": "RULES",
+      "Detected Intent": "RULES",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+        "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা"
+      ],
+      "Expected Evidence": [
+        "বড় হাতের",
+        "সংখ্যা",
+        "চিহ্ন"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী একটি শক্তিশালী ও সুরক্ষিত পাসওয়ার্ড তৈরির প্রধান ৫টি নিয়ম ও নিয়মাবলি:\n১. পাসওয়ার্ডে বড় হাতের অক্ষর (A-Z) এবং ছোট হাতের অক্ষর (a-z) মিশ্রিত থাকতে হবে।\n২. অন্তত কয়েকটি সংখ্যা (0-9) ব্যবহার করতে হবে।\n৩. বিশেষ চিহ্ন বা স্পেশাল ক্যারেক্টার (যেমন: @, #, $, %, !) থাকতে হবে।\n৪. পাসওয়ার্ডের দৈর্ঘ্য অন্তত ৮ থেকে ১৬ অক্ষরের হওয়া নিরাপদ।\n৫. ব্যক্তিগত তথ্য পরিহার করা এবং নিয়মিত পরিবর্তন বা নিয়মিত বিরতিতে পরিবর্তন করা।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 14.08
+    },
+    {
+      "Test ID": "F_CTX_01",
+      "Category": "Context",
+      "Chapter": 2,
+      "Topic": "কম্পিউটার ভাইরাস",
+      "Source": "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+      "Query": "কম্পিউটার ভাইরাস কী?",
+      "Resolved Query": "কম্পিউটার ভাইরাস কী?",
+      "Expected Intent": "DEFINITION",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+        "কম্পিউটার ভাইরাস ও ম্যালওয়্যার - নামকরণ ও ভাইরাসের ইতিহাস"
+      ],
+      "Expected Evidence": [
+        "Vital Information Resources Under Siege",
+        "ক্ষতিকর প্রোগ্রাম"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, কম্পিউটার ভাইরাস (VIRUS - Vital Information Resources Under Siege) হলো এক ধরনের ক্ষতিকর প্রোগ্রাম যা ব্যবহারকারীর অনুমতি ছাড়াই কম্পিউটারে প্রবেশ করে এবং স্বয়ংক্রিয়ভাবে নিজের প্রতিরূপ (Replicate) সৃষ্টি করে ফাইল ও সিস্টেম নষ্ট করে দেয়। প্রখ্যাত গবেষক ফ্রেড কোহেন (Fred Cohen) ১৯৮৩ সালে প্রথম ভাইরাসের আনুষ্ঠানিক নামকরণ করেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 9.65
+    },
+    {
+      "Test ID": "F_CTX_02",
+      "Category": "Context",
+      "Chapter": 2,
+      "Topic": "কম্পিউটার ভাইরাস (Follow-up 1)",
+      "Source": "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+      "Query": "এটি কীভাবে ছড়ায়?",
+      "Resolved Query": "কম্পিউটার ভাইরাস এটি কীভাবে ছড়ায়?",
+      "Expected Intent": "MECHANISM",
+      "Detected Intent": "MECHANISM",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+        "কম্পিউটার ভাইরাস ও ম্যালওয়্যার - নামকরণ ও ভাইরাসের ইতিহাস"
+      ],
+      "Expected Evidence": [
+        "পেনড্রাইভ",
+        "ইন্টারনেট",
+        "ডাউনলোড"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, কম্পিউটার ভাইরাস যেভাবে এক কম্পিউটার থেকে অন্য কম্পিউটারে ছড়ায়:\n• সংক্রমিত পেনড্রাইভ, মেমোরি কার্ড বা সিডি কম্পিউটারে যুক্ত করলে।\n• ইন্টারনেট থেকে অনিরাপদ ফাইল, গান বা সফটওয়্যার ডাউনলোড করলে।\n• পাইরেটেড বা অননুমোদিত সফটওয়্যার ব্যবহারের মাধ্যমে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 7.56
+    },
+    {
+      "Test ID": "F_CTX_03",
+      "Category": "Context",
+      "Chapter": 2,
+      "Topic": "কম্পিউটার ভাইরাস (Follow-up 2)",
+      "Source": "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+      "Query": "এর হাত থেকে বাঁচার উপায় কী?",
+      "Resolved Query": "কম্পিউটার ভাইরাস-এর হাত থেকে বাঁচার উপায় কী?",
+      "Expected Intent": "PREVENTION",
+      "Detected Intent": "PREVENTION",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+        "কম্পিউটার ভাইরাস ও ম্যালওয়্যার - নামকরণ ও ভাইরাসের ইতিহাস"
+      ],
+      "Expected Evidence": [
+        "অ্যান্টিভাইরাস",
+        "আপডেট",
+        "স্ক্যান"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী কম্পিউটারকে ভাইরাস থেকে মুক্ত ও নিরাপদ রাখার প্রধান উপায়সমূহ:\n১. কম্পিউটারে বিশ্বস্ত অ্যান্টিভাইরাস সফটওয়্যার (যেমন: Avast, Avira, Kaspersky, Norton বা Windows Defender) ইনস্টল করা।\n২. অ্যান্টিভাইরাস সফটওয়্যার সর্বদা নিয়মিত আপডেট রাখা, যেন তা নতুন ভাইরাস শনাক্ত ও নির্মূল করতে পারে।\n৩. অন্য কম্পিউটার থেকে আনা পেনড্রাইভ বা মেমোরি কার্ড ব্যবহারের পূর্বে অ্যান্টিভাইরাস দিয়ে স্ক্যান করা।\n৪. অনিরাপদ ইন্টারনেট ওয়েবসাইট ও পাইরেটেড সফটওয়্যার ব্যবহার পরিহার করা।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 9.09
+    },
+    {
+      "Test ID": "F_CTX_04",
+      "Category": "Context",
+      "Chapter": 2,
+      "Topic": "পাসওয়ার্ড (Follow-up)",
+      "Source": "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+      "Query": "এটি শক্তিশালী করার ৫টি নিয়ম কী?",
+      "Resolved Query": "এটি শক্তিশালী করার ৫টি নিয়ম কী?",
+      "Expected Intent": "RULES",
+      "Detected Intent": "RULES",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+        "ই-লার্নিং ও বাংলাদেশ"
+      ],
+      "Expected Evidence": [
+        "বড় হাতের",
+        "সংখ্যা",
+        "চিহ্ন"
+      ],
+      "Generated Answer": "কম্পিউটার ও অনলাইন অ্যাকাউন্টের তথ্যের গোপনীয়তা রক্ষার প্রধান চাবিকাঠি হলো পাসওয়ার্ড। একটি সুরক্ষিত ও শক্তিশালী পাসওয়ার্ড তৈরির প্রধান ৫টি নিয়ম: ১. পাসওয়ার্ডে বড় হাতের অক্ষর (A-Z) এবং ছোট হাতের অক্ষরের (a-z) মিশ্রণ থাকতে হবে। ২. অন্তত কয়েকটি সংখ্যা (0-9) ব্যবহার করতে হবে। ৩. বিশেষ চিহ্ন বা স্পেশাল ক্যারেক্টার (যেমন: @, #, $, %, ! , *) ব্যবহার করতে হবে। ৪. পাসওয়ার্ডের দৈর্ঘ্য অন্তত ৮ থেকে ১৬ অক্ষরের হতে হবে। সহজে অনুমানযোগ্য কোনো শব্দ, নিজের নাম বা মোবাইল নম্বর পরিহার করতে হবে। ৫. নিয়মিত বিরতিতে পাসওয়ার্ড পরিবর্তন করতে হবে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 9.14
+    },
+    {
+      "Test ID": "G_MUL_01",
+      "Category": "Multi-intent",
+      "Chapter": 2,
+      "Topic": "কম্পিউটার ভাইরাস",
+      "Source": "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+      "Query": "কম্পিউটার ভাইরাস কী এবং এটি কীভাবে ছড়ায়?",
+      "Resolved Query": "কম্পিউটার ভাইরাস কী এবং এটি কীভাবে ছড়ায়?",
+      "Expected Intent": "MULTI_INTENT",
+      "Detected Intent": "MULTI_INTENT",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+        "কম্পিউটার ভাইরাস ও ম্যালওয়্যার - নামকরণ ও ভাইরাসের ইতিহাস"
+      ],
+      "Expected Evidence": [
+        "Vital Information Resources Under Siege",
+        "সংজ্ঞা",
+        "পেনড্রাইভ",
+        "ছড়ায়"
+      ],
+      "Generated Answer": "**১. কম্পিউটার ভাইরাসের সংজ্ঞা:**\nপাঠ্যবই অনুযায়ী, কম্পিউটার ভাইরাস (VIRUS - Vital Information Resources Under Siege) হলো এক ধরনের ক্ষতিকর প্রোগ্রাম বা ম্যালওয়্যার যা ব্যবহারকারীর অনুমতি ছাড়াই কম্পিউটারে প্রবেশ করে এবং স্বয়ংক্রিয়ভাবে নিজের প্রতিরূপ (Replicate) সৃষ্টি করে ফাইল ও সিস্টেম নষ্ট করে দেয়।\n\n**২. কীভাবে ছড়ায় (সংক্রমণ পদ্ধতি):**\nবই অনুযায়ী সাধারণত নিম্নোক্ত উপায়ে এক কম্পিউটার থেকে অন্য কম্পিউটারে ভাইরাস ছড়ায়:\n• সংক্রমিত পেনড্রাইভ বা মেমোরি কার্ড কম্পিউটারে যুক্ত করলে।\n• ইন্টারনেট থেকে ফাইল বা সফটওয়্যার ডাউনলোডের মাধ্যমে।\n• পাইরেটেড বা অননুমোদিত সফটওয়্যার ব্যবহারের মাধ্যমে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 6.57
+    },
+    {
+      "Test ID": "G_MUL_02",
+      "Category": "Multi-intent",
+      "Chapter": 2,
+      "Topic": "পাসওয়ার্ড নিরাপত্তা",
+      "Source": "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+      "Query": "পাসওয়ার্ড কী এবং শক্তিশালী পাসওয়ার্ড তৈরির প্রধান নিয়মগুলো কী কী?",
+      "Resolved Query": "পাসওয়ার্ড কী এবং শক্তিশালী পাসওয়ার্ড তৈরির প্রধান নিয়মগুলো কী কী?",
+      "Expected Intent": "MULTI_INTENT",
+      "Detected Intent": "RULES",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার নিরাপত্তা ও শক্তিশালী পাসওয়ার্ড তৈরির ৫টি নিয়ম",
+        "টু-ফ্যাক্টর অথেনটিকেশন (2FA) ও বায়োমেট্রিক নিরাপত্তা"
+      ],
+      "Expected Evidence": [
+        "পাসওয়ার্ড",
+        "নিয়ম",
+        "বড় হাতের",
+        "চিহ্ন"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী একটি শক্তিশালী ও সুরক্ষিত পাসওয়ার্ড তৈরির প্রধান ৫টি নিয়ম ও নিয়মাবলি:\n১. পাসওয়ার্ডে বড় হাতের অক্ষর (A-Z) এবং ছোট হাতের অক্ষর (a-z) মিশ্রিত থাকতে হবে।\n২. অন্তত কয়েকটি সংখ্যা (0-9) ব্যবহার করতে হবে।\n৩. বিশেষ চিহ্ন বা স্পেশাল ক্যারেক্টার (যেমন: @, #, $, %, !) থাকতে হবে।\n৪. পাসওয়ার্ডের দৈর্ঘ্য অন্তত ৮ থেকে ১৬ অক্ষরের হওয়া নিরাপদ।\n৫. ব্যক্তিগত তথ্য পরিহার করা এবং নিয়মিত পরিবর্তন বা নিয়মিত বিরতিতে পরিবর্তন করা।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 8.37
+    },
+    {
+      "Test ID": "G_MUL_03",
+      "Category": "Multi-intent",
+      "Chapter": 1,
+      "Topic": "চার্লস ব্যাবেজ",
+      "Source": "আইসিটি বিকাশে উল্লেখযোগ্য ব্যক্তিত্ব - চার্লস ব্যাবেজ ও অ্যানালিটিক্যাল ইঞ্জিন",
+      "Query": "চার্লস ব্যাবেজ কে ছিলেন এবং তিনি কোন কোন গণনা যন্ত্রের নকশা করেন?",
+      "Resolved Query": "চার্লস ব্যাবেজ কে ছিলেন এবং তিনি কোন কোন গণনা যন্ত্রের নকশা করেন?",
+      "Expected Intent": "HISTORY_PERSON",
+      "Detected Intent": "HISTORY_PERSON",
+      "Retrieved Chunk(s)": [
+        "আইসিটি বিকাশে উল্লেখযোগ্য ব্যক্তিত্ব - চার্লস ব্যাবেজ ও অ্যানালিটিক্যাল ইঞ্জিন",
+        "আইসিটি বিকাশে উল্লেখযোগ্য ব্যক্তিত্ব - অ্যাডা লাভলেস ও তুরিন বিশ্ববিদ্যালয় ১৮৪০"
+      ],
+      "Expected Evidence": [
+        "চার্লস ব্যাবেজ",
+        "ডিফারেন্স ইঞ্জিন",
+        "অ্যানালিটিক্যাল ইঞ্জিন"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, চার্লস ব্যাবেজ (১৭৯১-১৮৭১) হলেন কম্পিউটারের জনক হিসেবে পরিচিত ইংরেজ বিজ্ঞানী ও গণিতবিদ। তিনি ১৮২২ সালে ডিফারেন্স ইঞ্জিন এবং ১৮৩৩ সালে আধুনিক কম্পিউটারের ভিত্তি অ্যানালিটিক্যাল ইঞ্জিন নামক মেকানিক্যাল গণনাকারী যন্ত্রের নকশা প্রণয়ন করেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 8.43
+    },
+    {
+      "Test ID": "H_FAL_01",
+      "Category": "False Premise",
+      "Chapter": 2,
+      "Topic": "কম্পিউটার ভাইরাস প্রকারভেদ",
+      "Source": "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+      "Query": "Chapter 2 অনুযায়ী কম্পিউটার ভাইরাস ৫ প্রকার—সেগুলো কী কী?",
+      "Resolved Query": "অধ্যায় ২ অনুযায়ী কম্পিউটার ভাইরাস ৫ প্রকার—সেগুলো কী কী?",
+      "Expected Intent": "GENERAL",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "কম্পিউটার ভাইরাস প্রতিরোধ ও অ্যান্টিভাইরাস সফটওয়্যার",
+        "কম্পিউটার ভাইরাস ও ম্যালওয়্যার - নামকরণ ও ভাইরাসের ইতিহাস"
+      ],
+      "Expected Evidence": [
+        "পাঠ্যবই",
+        "ভাইরাস"
+      ],
+      "Generated Answer": "পাঠ্যবইয়ের অধ্যায় ২ অনুযায়ী, কম্পিউটার ভাইরাস নির্দিষ্টভাবে ৫ প্রকার—এমন কোনো তথ্য বা তালিকা নেই। তবে পাঠ্যবইয়ে ভাইরাসের কাজের ধরন ও ক্ষতিকর আচরণের ভিত্তিতে ভাইরাসের আক্রমণ এবং কিছু ক্ষতিকর ভাইরাসের উদাহরণ (যেমন: CIH, সিবিআর, স্টোন, ভিয়েনা, ট্রোজান হর্স ইত্যাদি) উল্লেখ রয়েছে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 12.35
+    },
+    {
+      "Test ID": "H_FAL_02",
+      "Category": "False Premise",
+      "Chapter": 1,
+      "Topic": "বঙ্গবন্ধু স্যাটেলাইট",
+      "Source": "আইসিটি সূচক, ডিজিটাল বাংলাদেশ ও বঙ্গবন্ধু স্যাটেলাইট-১",
+      "Query": "বঙ্গবন্ধু স্যাটেলাইট-১ কি চাঁদে পাঠানো হয়েছে?",
+      "Resolved Query": "বঙ্গবন্ধু স্যাটেলাইট-১ কি চাঁদে পাঠানো হয়েছে?",
+      "Expected Intent": "GENERAL",
+      "Detected Intent": "DEFINITION",
+      "Retrieved Chunk(s)": [
+        "আইসিটি সূচক, ডিজিটাল বাংলাদেশ ও বঙ্গবন্ধু স্যাটেলাইট-১"
+      ],
+      "Expected Evidence": [
+        "কক্ষপথ",
+        "১১৯.১"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, বঙ্গবন্ধু স্যাটেলাইট-১ চাঁদে পাঠানো হয়নি। এটি পৃথিবীর মহাকাশে ১১৯.১° পূর্ব দ্রাঘিমাংশে নিজস্ব অরবিটাল স্লট বা নির্দিষ্ট কক্ষপথে অবস্থান করে যোগাযোগ ও সম্প্রচার সেবা প্রদান করছে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 8.49
+    },
+    {
+      "Test ID": "H_FAL_03",
+      "Category": "False Premise",
+      "Chapter": 1,
+      "Topic": "আইসিটি ব্যক্তিত্ব",
+      "Source": "আইসিটি বিকাশে উল্লেখযোগ্য ব্যক্তিত্ব - বিল গেটস ও টিম বার্নার্স-লি",
+      "Query": "বিল গেটস কি ফেসবুক তৈরি করেছেন?",
+      "Resolved Query": "বিল গেটস কি ফেসবুক তৈরি করেছেন?",
+      "Expected Intent": "HISTORY_PERSON",
+      "Detected Intent": "HISTORY_PERSON",
+      "Retrieved Chunk(s)": [
+        "আইসিটি বিকাশে উল্লেখযোগ্য ব্যক্তিত্ব - বিল গেটস ও টিম বার্নার্স-লি"
+      ],
+      "Expected Evidence": [
+        "বিল গেটস",
+        "মাইক্রোসফট",
+        "মার্ক জাকারবার্গ"
+      ],
+      "Generated Answer": "পাঠ্যবই অনুযায়ী, বিল গেটস ফেসবুক তৈরি করেননি; বিল গেটস হলেন মাইক্রোসফট (Microsoft)-এর প্রতিষ্ঠাতা। আর সামাজিক যোগাযোগ মাধ্যম ফেসবুক (Facebook) ২০০৪ সালে প্রতিষ্ঠা করেছেন মার্ক জাকারবার্গ।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 10.39
+    },
+    {
+      "Test ID": "I_LEA_01",
+      "Category": "Scope Leakage",
+      "Chapter": 0,
+      "Topic": "মাইক্রোসফট এক্সেল (Ch 4)",
+      "Source": "None",
+      "Query": "Microsoft Excel-এর SUM কীভাবে ব্যবহার করব?",
+      "Resolved Query": "Microsoft Excel-এর SUM কীভাবে ব্যবহার করব?",
+      "Expected Intent": "OUT_OF_CURRICULUM",
+      "Detected Intent": "OUT_OF_CURRICULUM",
+      "Retrieved Chunk(s)": [],
+      "Expected Evidence": [
+        "পাওয়া যায়নি"
+      ],
+      "Generated Answer": "এই প্রশ্নের তথ্য বর্তমানে অধ্যায় ১ ও অধ্যায় ২-এর আওতাভুক্ত নয় বা dataset-এ পাওয়া যায়নি। আপনি পাঠ্যবইয়ের অধ্যায় ১ ও অধ্যায় ২-এর যেকোনো বিষয় থেকে প্রশ্ন করতে পারেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 5.02
+    },
+    {
+      "Test ID": "I_LEA_02",
+      "Category": "Scope Leakage",
+      "Chapter": 0,
+      "Topic": "মাইক্রোসফট ওয়ার্ড (Ch 4)",
+      "Source": "None",
+      "Query": "মাইক্রোসফট ওয়ার্ডে টেবিল কীভাবে বানাব?",
+      "Resolved Query": "মাইক্রোসফট ওয়ার্ডে টেবিল কীভাবে বানাব?",
+      "Expected Intent": "OUT_OF_CURRICULUM",
+      "Detected Intent": "OUT_OF_CURRICULUM",
+      "Retrieved Chunk(s)": [],
+      "Expected Evidence": [
+        "পাওয়া যায়নি"
+      ],
+      "Generated Answer": "এই প্রশ্নের তথ্য বর্তমানে অধ্যায় ১ ও অধ্যায় ২-এর আওতাভুক্ত নয় বা dataset-এ পাওয়া যায়নি। আপনি পাঠ্যবইয়ের অধ্যায় ১ ও অধ্যায় ২-এর যেকোনো বিষয় থেকে প্রশ্ন করতে পারেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 1.3
+    },
+    {
+      "Test ID": "I_LEA_03",
+      "Category": "Scope Leakage",
+      "Chapter": 0,
+      "Topic": "কম্পিউটার প্রোগ্রামিং পাইথন",
+      "Source": "None",
+      "Query": "কম্পিউটারে পাইথন দিয়ে লুপ প্রোগ্রামিং কীভাবে শিখব?",
+      "Resolved Query": "কম্পিউটারে পাইথন দিয়ে লুপ প্রোগ্রামিং কীভাবে শিখব?",
+      "Expected Intent": "OUT_OF_CURRICULUM",
+      "Detected Intent": "OUT_OF_CURRICULUM",
+      "Retrieved Chunk(s)": [],
+      "Expected Evidence": [
+        "পাওয়া যায়নি"
+      ],
+      "Generated Answer": "এই প্রশ্নের তথ্য বর্তমানে অধ্যায় ১ ও অধ্যায় ২-এর আওতাভুক্ত নয় বা dataset-এ পাওয়া যায়নি। আপনি পাঠ্যবইয়ের অধ্যায় ১ ও অধ্যায় ২-এর যেকোনো বিষয় থেকে প্রশ্ন করতে পারেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 0.0
+    },
+    {
+      "Test ID": "J_OOS_01",
+      "Category": "Out-of-Scope",
+      "Chapter": 0,
+      "Topic": "ভূগোল ও নদী",
+      "Source": "None",
+      "Query": "বাংলাদেশের দীর্ঘতম নদীর নাম কী এবং এটি কোথা থেকে উৎপন্ন হয়েছে?",
+      "Resolved Query": "বাংলাদেশের দীর্ঘতম নদীর নাম কী এবং এটি কোথা থেকে উৎপন্ন হয়েছে?",
+      "Expected Intent": "OUT_OF_CURRICULUM",
+      "Detected Intent": "OUT_OF_CURRICULUM",
+      "Retrieved Chunk(s)": [],
+      "Expected Evidence": [
+        "পাওয়া যায়নি"
+      ],
+      "Generated Answer": "এই প্রশ্নের তথ্য বর্তমানে অধ্যায় ১ ও অধ্যায় ২-এর আওতাভুক্ত নয় বা dataset-এ পাওয়া যায়নি। আপনি পাঠ্যবইয়ের অধ্যায় ১ ও অধ্যায় ২-এর যেকোনো বিষয় থেকে প্রশ্ন করতে পারেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 0.0
+    },
+    {
+      "Test ID": "J_OOS_02",
+      "Category": "Out-of-Scope",
+      "Chapter": 0,
+      "Topic": "ইতিহাস ও মুক্তিযুদ্ধ",
+      "Source": "None",
+      "Query": "১৯৭১ সালের মুক্তিযুদ্ধ এবং সাতজন বীরশ্রেষ্ঠের নাম বল।",
+      "Resolved Query": "১৯৭১ সালের মুক্তিযুদ্ধ এবং সাতজন বীরশ্রেষ্ঠের নাম বল।",
+      "Expected Intent": "OUT_OF_CURRICULUM",
+      "Detected Intent": "OUT_OF_CURRICULUM",
+      "Retrieved Chunk(s)": [],
+      "Expected Evidence": [
+        "পাওয়া যায়নি"
+      ],
+      "Generated Answer": "এই প্রশ্নের তথ্য বর্তমানে অধ্যায় ১ ও অধ্যায় ২-এর আওতাভুক্ত নয় বা dataset-এ পাওয়া যায়নি। আপনি পাঠ্যবইয়ের অধ্যায় ১ ও অধ্যায় ২-এর যেকোনো বিষয় থেকে প্রশ্ন করতে পারেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 0.0
+    },
+    {
+      "Test ID": "J_OOS_03",
+      "Category": "Out-of-Scope",
+      "Chapter": 0,
+      "Topic": "গণিত",
+      "Source": "None",
+      "Query": "পীথাগোরাসের উপপাদ্যটি প্রমাণ কর।",
+      "Resolved Query": "পীথাগোরাসের উপপাদ্যটি প্রমাণ কর।",
+      "Expected Intent": "OUT_OF_CURRICULUM",
+      "Detected Intent": "OUT_OF_CURRICULUM",
+      "Retrieved Chunk(s)": [],
+      "Expected Evidence": [
+        "পাওয়া যায়নি"
+      ],
+      "Generated Answer": "এই প্রশ্নের তথ্য বর্তমানে অধ্যায় ১ ও অধ্যায় ২-এর আওতাভুক্ত নয় বা dataset-এ পাওয়া যায়নি। আপনি পাঠ্যবইয়ের অধ্যায় ১ ও অধ্যায় ২-এর যেকোনো বিষয় থেকে প্রশ্ন করতে পারেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 0.0
+    },
+    {
+      "Test ID": "J_OOS_04",
+      "Category": "Out-of-Scope",
+      "Chapter": 0,
+      "Topic": "খেলাধুলা",
+      "Source": "None",
+      "Query": "২০২৩ সালের ক্রিকেট বিশ্বকাপ চ্যাম্পিয়ন কোন দল হয়েছিল?",
+      "Resolved Query": "২০২৩ সালের ক্রিকেট বিশ্বকাপ চ্যাম্পিয়ন কোন দল হয়েছিল?",
+      "Expected Intent": "OUT_OF_CURRICULUM",
+      "Detected Intent": "OUT_OF_CURRICULUM",
+      "Retrieved Chunk(s)": [],
+      "Expected Evidence": [
+        "পাওয়া যায়নি"
+      ],
+      "Generated Answer": "এই প্রশ্নের তথ্য বর্তমানে অধ্যায় ১ ও অধ্যায় ২-এর আওতাভুক্ত নয় বা dataset-এ পাওয়া যায়নি। আপনি পাঠ্যবইয়ের অধ্যায় ১ ও অধ্যায় ২-এর যেকোনো বিষয় থেকে প্রশ্ন করতে পারেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 0.0
+    },
+    {
+      "Test ID": "J_OOS_05",
+      "Category": "Out-of-Scope",
+      "Chapter": 0,
+      "Topic": "রান্না",
+      "Source": "None",
+      "Query": "সুস্বাদু বিরিয়ানি রান্নার রেসিপি কী?",
+      "Resolved Query": "সুস্বাদু বিরিয়ানি রান্নার রেসিপি কী?",
+      "Expected Intent": "OUT_OF_CURRICULUM",
+      "Detected Intent": "OUT_OF_CURRICULUM",
+      "Retrieved Chunk(s)": [],
+      "Expected Evidence": [
+        "পাওয়া যায়নি"
+      ],
+      "Generated Answer": "এই প্রশ্নের তথ্য বর্তমানে অধ্যায় ১ ও অধ্যায় ২-এর আওতাভুক্ত নয় বা dataset-এ পাওয়া যায়নি। আপনি পাঠ্যবইয়ের অধ্যায় ১ ও অধ্যায় ২-এর যেকোনো বিষয় থেকে প্রশ্ন করতে পারেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 0.0
+    },
+    {
+      "Test ID": "J_OOS_06",
+      "Category": "Out-of-Scope",
+      "Chapter": 0,
+      "Topic": "ফটোশপ (Ch 5)",
+      "Source": "None",
+      "Query": "ফটোশপে ব্যাকগ্রাউন্ড কীভাবে রিমুভ করব?",
+      "Resolved Query": "ফটোশপে ব্যাকগ্রাউন্ড কীভাবে রিমুভ করব?",
+      "Expected Intent": "OUT_OF_CURRICULUM",
+      "Detected Intent": "OUT_OF_CURRICULUM",
+      "Retrieved Chunk(s)": [],
+      "Expected Evidence": [
+        "পাওয়া যায়নি"
+      ],
+      "Generated Answer": "এই প্রশ্নের তথ্য বর্তমানে অধ্যায় ১ ও অধ্যায় ২-এর আওতাভুক্ত নয় বা dataset-এ পাওয়া যায়নি। আপনি পাঠ্যবইয়ের অধ্যায় ১ ও অধ্যায় ২-এর যেকোনো বিষয় থেকে প্রশ্ন করতে পারেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 0.0
+    },
+    {
+      "Test ID": "J_OOS_07",
+      "Category": "Out-of-Scope",
+      "Chapter": 0,
+      "Topic": "ডাটাবেজ ও এসকিউএল (Ch 6)",
+      "Source": "None",
+      "Query": "এসকিউএল (SQL) দিয়ে ডাটাবেজে টেবিল কীভাবে তৈরি করব?",
+      "Resolved Query": "এসকিউএল (SQL) দিয়ে ডাটাবেজে টেবিল কীভাবে তৈরি করব?",
+      "Expected Intent": "OUT_OF_CURRICULUM",
+      "Detected Intent": "OUT_OF_CURRICULUM",
+      "Retrieved Chunk(s)": [],
+      "Expected Evidence": [
+        "পাওয়া যায়নি"
+      ],
+      "Generated Answer": "এই প্রশ্নের তথ্য বর্তমানে অধ্যায় ১ ও অধ্যায় ২-এর আওতাভুক্ত নয় বা dataset-এ পাওয়া যায়নি। আপনি পাঠ্যবইয়ের অধ্যায় ১ ও অধ্যায় ২-এর যেকোনো বিষয় থেকে প্রশ্ন করতে পারেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 6.03
+    },
+    {
+      "Test ID": "K_ISO_01",
+      "Category": "Chapter Isolation",
+      "Chapter": 1,
+      "Topic": "বঙ্গবন্ধু স্যাটেলাইট",
+      "Source": "আইসিটি সূচক, ডিজিটাল বাংলাদেশ ও বঙ্গবন্ধু স্যাটেলাইট-১",
+      "Query": "বঙ্গবন্ধু স্যাটেলাইট-১ কত সালে উৎক্ষেপণ করা হয় এবং বাংলাদেশ কততম দেশ?",
+      "Resolved Query": "বঙ্গবন্ধু স্যাটেলাইট-১ কত সালে উৎক্ষেপণ করা হয় এবং বাংলাদেশ কততম দেশ?",
+      "Expected Intent": "GENERAL",
+      "Detected Intent": "GENERAL",
+      "Retrieved Chunk(s)": [
+        "আইসিটি সূচক, ডিজিটাল বাংলাদেশ ও বঙ্গবন্ধু স্যাটেলাইট-১"
+      ],
+      "Expected Evidence": [
+        "২০১৮",
+        "১২ মে",
+        "৫৭তম"
+      ],
+      "Generated Answer": "**উত্তর: ২০১৮ সালে (১২ মে)।**\n\n**সংক্ষিপ্ত তথ্য:** ২০১৮ সালের ১২ মে বাংলাদেশ বিশ্বের ৫৭তম দেশ হিসেবে নিজস্ব স্যাটেলাইট 'বঙ্গবন্ধু স্যাটেলাইট-১' সফলভাবে মহাকাশে উৎক্ষেপণ করে, যা ১১৯.১° পূর্ব দ্রাঘিমাংশে নিজস্ব অরবিটাল স্লট বা কক্ষপথে অবস্থান করছে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 6.34
+    },
+    {
+      "Test ID": "K_ISO_02",
+      "Category": "Chapter Isolation",
+      "Chapter": 2,
+      "Topic": "কপিরাইট আইন",
+      "Source": "কপিরাইট আইন ও সফটওয়্যার পাইরেসি",
+      "Query": "বাংলাদেশে কপিরাইট আইন কত সালে প্রণীত হয় এবং বিএসএ এর রিপোর্ট কী?",
+      "Resolved Query": "বাংলাদেশে কপিরাইট আইন কত সালে প্রণীত হয় এবং বিএসএ এর রিপোর্ট কী?",
+      "Expected Intent": "GENERAL",
+      "Detected Intent": "HISTORY_PERSON",
+      "Retrieved Chunk(s)": [
+        "কপিরাইট আইন ও সফটওয়্যার পাইরেসি",
+        "আইসিটি সূচক, ডিজিটাল বাংলাদেশ ও বঙ্গবন্ধু স্যাটেলাইট-১"
+      ],
+      "Expected Evidence": [
+        "২০০০",
+        "২০০৫",
+        "৪ জন"
+      ],
+      "Generated Answer": "**১. কপিরাইট আইনের সাল:**\nবাংলাদেশে কপিরাইট আইন প্রথম ২০০০ সালে প্রণীত হয় এবং পরবর্তীতে ২০০৫ সালে তা সংশোধন করা হয়।\n\n**২. বিএসএ (BSA) এর রিপোর্ট:**\nবিজনেস সফটওয়্যার অ্যালায়েন্স (বিএসএ)-এর ২০১১ সালের রিপোর্ট অনুযায়ী, বিশ্বজুড়ে কম্পিউটার ব্যবহারকারীদের প্রতি ১০ জনের মধ্যে ৪ জনই পাইরেসি বা অবৈধ সফটওয়্যার ব্যবহার করে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 4.28
+    },
+    {
+      "Test ID": "K_ISO_03",
+      "Category": "Chapter Isolation",
+      "Chapter": 1,
+      "Topic": "ই-পুর্জি",
+      "Source": "ই-সার্ভিস ও নাগরিক সেবা - ই-পুর্জি, ইএমটিএস ও ই-পর্চা",
+      "Query": "আখ চাষিদের জন্য ই-পুর্জি কীভাবে কাজ করে?",
+      "Resolved Query": "আখ চাষিদের জন্য ই-পুর্জি কীভাবে কাজ করে?",
+      "Expected Intent": "GENERAL",
+      "Detected Intent": "MECHANISM",
+      "Retrieved Chunk(s)": [
+        "ই-সার্ভিস ও নাগরিক সেবা - ই-পুর্জি, ইএমটিএস ও ই-পর্চা",
+        "আইসিটি বিকাশে উল্লেখযোগ্য ব্যক্তিত্ব - অ্যাডা লাভলেস ও তুরিন বিশ্ববিদ্যালয় ১৮৪০"
+      ],
+      "Expected Evidence": [
+        "আখ",
+        "চিনি",
+        "ই-পুর্জি"
+      ],
+      "Generated Answer": "ই-সার্ভিস বা ই-সেবা হলো ডিজিটাল মাধ্যমে নাগরিক সেবা পৌঁছে দেওয়ার ব্যবস্থা। ই-সেবার মূল বৈশিষ্ট্য: স্বল্প খরচে, স্বল্প সময়ে এবং হয়রানিমুক্ত সেবা নিশ্চিত করা। প্রধান কয়েকটি ই-সেবা: ১. ই-পুর্জি: দেশের ১৫টি চিনিকলের সকল আখচাষি এখন এসএমএসের মাধ্যমে তাত্ক্ষণিকভাবে পুর্জি (আখ সরবরাহের অনুমতিপত্র) পাচ্ছে। ২. ইলেকট্রনিক মানি ট্রান্সফার সিস্টেম (ই-এমটিএস): বাংলাদেশ ডাক বিভাগের মাধ্যমে দেশের এক প্রান্ত থেকে অন্য প্রান্তে মাত্র ১ মিনিটে ৫০ হাজার টাকা পর্যন্ত নিরাপদে পাঠানো যায়। ৩. ই-পর্চা সেবা: জমিজমার খতিয়ান বা রেকর্ডের অনুলিপি দেশ-বিদেশের যেকোনো স্থান থেকে অনলাইনে নির্দিষ্ট ফি দিয়ে সংগ্রহ করা যায়। ৪. ই-স্বাস্থ্যসেবা ও টেলিমেডিসিন: মোবাইল ও ইন্টারনেটের মাধ্যমে বিশেষজ্ঞ চিকিৎসকের পরামর্শ নেওয়া যায়। ৫. রেলওয়ের ই-টিকিটিং: ঘরে বসে ট্রেনের টিকিট কাটা ও ভাড়া পরিশোধ করা যায়।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 6.03
+    },
+    {
+      "Test ID": "K_ISO_04",
+      "Category": "Chapter Isolation",
+      "Chapter": 2,
+      "Topic": "ট্রাবলশুটিং রিস্টার্ট",
+      "Source": "ট্রাবলশুটিং সমস্যা ৫ থেকে ৮ - ধীরগতি, মেটালিক বডি শক, হ্যাং/রিস্টার্ট ও উইন্ডোজ বুট সমস্যা",
+      "Query": "কম্পিউটার বারবার স্বয়ংক্রিয়ভাবে রিস্টার্ট বা হ্যাং হলে কী করতে হবে?",
+      "Resolved Query": "কম্পিউটার বারবার স্বয়ংক্রিয়ভাবে রিস্টার্ট বা হ্যাং হলে কী করতে হবে?",
+      "Expected Intent": "TROUBLESHOOTING",
+      "Detected Intent": "TROUBLESHOOTING",
+      "Retrieved Chunk(s)": [
+        "ট্রাবলশুটিং সমস্যা ৫ থেকে ৮ - ধীরগতি, মেটালিক বডি শক, হ্যাং/রিস্টার্ট ও উইন্ডোজ বুট সমস্যা",
+        "কম্পিউটার ভাইরাস সংক্রমণের লক্ষণসমূহ"
+      ],
+      "Expected Evidence": [
+        "কুলিং ফ্যান",
+        "রিস্টার্ট",
+        "হ্যাং"
+      ],
+      "Generated Answer": "পাঠ্যবইয়ের ট্রাবলশুটিং নির্দেশিকা অনুযায়ী কম্পিউটার ঘন ঘন রিস্টার্ট বা হ্যাং হলে করণীয়:\n• প্রসেসরের কুলিং ফ্যান সঠিকভাবে ঘুরছে কিনা পরীক্ষা করতে হবে।\n• কুলিং ফ্যান ও প্রসেসরের মধ্যকার থার্মাল পেস্ট (Thermal Paste) শুকিয়ে গেলে নতুন পেস্ট লাগাতে হবে।\n• মেমোরি (RAM) ত্রুটিমুক্ত কিনা এবং ভাইরাসের আক্রমণ হয়েছে কিনা স্ক্যান করে দেখতে হবে।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 6.39
+    },
+    {
+      "Test ID": "L_HAL_01",
+      "Category": "Hallucination",
+      "Chapter": 0,
+      "Topic": "অনুপস্থিত তথ্য ১",
+      "Source": "None",
+      "Query": "কম্পিউটার ভাইরাসের আবিষ্কারক ফ্রেড কোহেন কোন হাই স্কুলে পড়াশোনা করেছিলেন?",
+      "Resolved Query": "কম্পিউটার ভাইরাসের আবিষ্কারক ফ্রেড কোহেন কোন হাই স্কুলে পড়াশোনা করেছিলেন?",
+      "Expected Intent": "OUT_OF_CURRICULUM",
+      "Detected Intent": "OUT_OF_CURRICULUM",
+      "Retrieved Chunk(s)": [],
+      "Expected Evidence": [
+        "পাওয়া যায়নি"
+      ],
+      "Generated Answer": "এই প্রশ্নের তথ্য বর্তমানে অধ্যায় ১ ও অধ্যায় ২-এর আওতাভুক্ত নয় বা dataset-এ পাওয়া যায়নি। আপনি পাঠ্যবইয়ের অধ্যায় ১ ও অধ্যায় ২-এর যেকোনো বিষয় থেকে প্রশ্ন করতে পারেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 6.28
+    },
+    {
+      "Test ID": "L_HAL_02",
+      "Category": "Hallucination",
+      "Chapter": 0,
+      "Topic": "অনুপস্থিত তথ্য ২",
+      "Source": "None",
+      "Query": "বঙ্গবন্ধু স্যাটেলাইট-১ তৈরিতে মোট কতজন বাংলাদেশি প্রকৌশলী কাজ করেছিলেন?",
+      "Resolved Query": "বঙ্গবন্ধু স্যাটেলাইট-১ তৈরিতে মোট কতজন বাংলাদেশি প্রকৌশলী কাজ করেছিলেন?",
+      "Expected Intent": "OUT_OF_CURRICULUM",
+      "Detected Intent": "OUT_OF_CURRICULUM",
+      "Retrieved Chunk(s)": [],
+      "Expected Evidence": [
+        "পাওয়া যায়নি"
+      ],
+      "Generated Answer": "এই প্রশ্নের তথ্য বর্তমানে অধ্যায় ১ ও অধ্যায় ২-এর আওতাভুক্ত নয় বা dataset-এ পাওয়া যায়নি। আপনি পাঠ্যবইয়ের অধ্যায় ১ ও অধ্যায় ২-এর যেকোনো বিষয় থেকে প্রশ্ন করতে পারেন।",
+      "Answer Relevant?": "YES",
+      "Source Grounded?": "YES",
+      "Hallucination?": "NO",
+      "Chapter Correct?": "YES",
+      "Pass/Fail": "PASS",
+      "Failure Reason": null,
+      "Latency (ms)": 5.74
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Node / Frontend dependencies & caches
+node_modules/
+frontend/node_modules/
+frontend/.vite/
+
+# Large binaries & tools
+cloudflared.exe
+*.exe
+
+# System & Agent Metadata
+.agents/
+.gemini/
+.idea/
+.vscode/
+*.log
+
+# Keep frontend/dist for instant cloud deployment without needing Node in Python runtime
+!frontend/dist/
